@@ -796,6 +796,34 @@ function startQuizHandler() {
     }
     selectedQuestions = selectedQuestions.slice(0, Math.min(sliderValue, selectedQuestions.length));
 
+    // Deep clone the questions to prevent modifying the original questions in state.loadedFiles
+    selectedQuestions = selectedQuestions.map(q => {
+        return {
+            ...q,
+            options: [...q.options]
+        };
+    });
+
+    // Shuffle options if checked
+    const shouldShuffleOptions = document.getElementById('shuffle-options-checkbox').checked;
+    if (shouldShuffleOptions) {
+        selectedQuestions.forEach(q => {
+            if (!q.isFIB && q.options.length > 1) {
+                const correctOptText = q.correctAnswerIndex !== -1 ? q.options[q.correctAnswerIndex] : null;
+                
+                // Fisher-Yates shuffle
+                for (let i = q.options.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [q.options[i], q.options[j]] = [q.options[j], q.options[i]];
+                }
+                
+                if (correctOptText !== null) {
+                    q.correctAnswerIndex = q.options.indexOf(correctOptText);
+                }
+            }
+        });
+    }
+
     // Initialize Quiz
     state.activeQuiz = new ActiveQuiz(selectedQuestions, selectedMode, timeLimitMinutes);
 
