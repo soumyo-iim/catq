@@ -1,0 +1,8 @@
+# Ignore personal question banks and answer keys
+ghee/
+
+# Ignore local editor/OS settings
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

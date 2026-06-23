@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizPro - Interactive Exam Prep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.58 10.57 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm1-8h-2v4h2v-4zm0-3h-2v2h2V7z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">QuizPro</div>
+            </div>
+
+            <!-- Folder Connection Card -->
+            <div class="directory-card">
+                <div class="dir-header">
+                    <div class="dir-title">Question Source</div>
+                    <div class="scan-indicator" id="scan-status">
+                        <span class="scan-dot"></span>
+                        <span id="scan-status-text">Disconnected</span>
+                    </div>
+                </div>
+                <div class="dir-path" id="connected-dir-name" title="No folder selected">No Folder Linked</div>
+                <button class="btn-primary" id="btn-select-folder">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="white" style="margin-right: 4px;">
+                        <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                    </svg>
+                    Select Folder
+                </button>
+                <!-- Fallback Directory Picker for unsupported browsers -->
+                <input type="file" id="dir-picker-fallback" webkitdirectory directory multiple style="display: none;">
+            </div>
+
+            <!-- File List Container -->
+            <div class="section-label">Active Question Banks</div>
+            <div class="file-list-container" id="file-list">
+                <div class="no-files-card">Select a questions folder to load HTML files.</div>
+            </div>
+
+            <!-- Navigation Panel -->
+            <div class="sidebar-nav">
+                <div class="nav-item active" id="nav-dashboard" onclick="switchView('dashboard')">
+                    <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+                    Dashboard
+                </div>
+                <div class="nav-item" id="nav-quiz" onclick="switchView('quiz')" style="display: none;">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    Active Quiz
+                </div>
+                <div class="nav-item" id="nav-parser" onclick="switchView('parser')">
+                    <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                    Parser Settings
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Viewport -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-title-container">
+                    <h1 class="header-title" id="page-title">Dashboard</h1>
+                    <div class="header-subtitle" id="page-subtitle">Welcome to your exam study cockpit.</div>
+                </div>
+                <div class="header-actions">
+                    <div class="stats-badge highlight" id="stats-badge-questions">
+                        <span id="total-compiled-count">0</span> Questions Compiled
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard View -->
+            <div class="view-panel active" id="view-dashboard">
+                <!-- Stat Cards -->
+                <div class="dashboard-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>TOTAL QUESTIONS</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H5c0-3.87 3.13-7 7-7s7 3.13 7 7c0 1.11-.45 2.12-1.17 2.85z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="stat-total-q">0</div>
+                    </div>
+                    <div class="stat-card emerald">
+                        <div class="stat-header">
+                            <span>PRACTICED SESSIONS</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="stat-sessions">0</div>
+                    </div>
+                    <div class="stat-card rose">
+                        <div class="stat-header">
+                            <span>ACCURACY RATE</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="stat-accuracy">0%</div>
+                    </div>
+                    <div class="stat-card pink">
+                        <div class="stat-header">
+                            <span>HTML SOURCE FILES</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="stat-files">0</div>
+                    </div>
+                </div>
+
+                <div class="actions-layout">
+                    <!-- Quiz Configuration Card -->
+                    <div class="action-card">
+                        <div class="card-title">
+                            <svg viewBox="0 0 24 24"><path d="M19.36 10.04L20.5 8.9c.78-.78.78-2.05 0-2.83l-1.77-1.77c-.78-.78-2.05-.78-2.83 0l-1.15 1.15 4.61 4.61zM3 16.25V21h4.75l13.3-13.3-4.61-4.61L3 16.25z"/></svg>
+                            Setup New Practice Session
+                        </div>
+                        
+                        <div class="danger-alert" id="setup-no-q-warning" style="display: none;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            Please select a folder and check at least one question bank to compile questions.
+                        </div>
+
+                        <div class="setup-form">
+                            <!-- Select Mode -->
+                            <div class="form-group">
+                                <label>Practice Format</label>
+                                <div class="options-grid">
+                                    <div class="mode-selector selected" id="mode-study" onclick="selectPracticeMode('study')">
+                                        <div class="mode-title">Study Mode</div>
+                                        <div class="mode-desc">Receive immediate feedback and explanations. Untimed.</div>
+                                    </div>
+                                    <div class="mode-selector" id="mode-exam" onclick="selectPracticeMode('exam')">
+                                        <div class="mode-title">Exam Mode</div>
+                                        <div class="mode-desc">Standard timed test. Results shown only at the end.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slider for question limit -->
+                            <div class="form-group">
+                                <label>Number of Questions: <span id="q-count-display">All</span></label>
+                                <input type="range" id="q-count-slider" class="custom-input" min="5" max="50" value="20" step="5" style="padding: 0;">
+                            </div>
+
+                            <!-- Shuffle Questions Toggle -->
+                            <div class="form-group" style="flex-direction: row; align-items: center; gap: 8px; margin-top: 4px;">
+                                <input type="checkbox" id="shuffle-questions-checkbox" checked style="width: 18px; height: 18px; accent-color: var(--primary); cursor: pointer;">
+                                <label for="shuffle-questions-checkbox" style="cursor: pointer; user-select: none;">Shuffle questions order</label>
+                            </div>
+
+                            <!-- Timer Setup -->
+                            <div class="form-group" id="timer-group" style="display: none;">
+                                <label>Time Limit (minutes)</label>
+                                <select id="quiz-duration-select" class="custom-select">
+                                    <option value="5">5 Minutes</option>
+                                    <option value="10">10 Minutes</option>
+                                    <option value="20" selected>20 Minutes</option>
+                                    <option value="30">30 Minutes</option>
+                                    <option value="60">60 Minutes</option>
+                                </select>
+                            </div>
+
+                            <button class="btn-primary" id="btn-start-quiz" style="padding: 16px; font-size: 16px; margin-top: 10px;">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="white" style="margin-right: 4px;">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                Start Quiz
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- History / Activity Feed -->
+                    <div class="action-card">
+                        <div class="card-title">
+                            <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6c-1.66 0-3.17-.68-4.28-1.78l-1.42 1.42C8.9 18.25 10.37 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                            Activity Log
+                        </div>
+                        <div class="history-list" id="activity-log">
+                            <div class="no-files-card" style="margin: 0; border-style: solid;">No quizzes completed yet. Your achievements will be recorded here!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Panel View -->
+            <div class="view-panel" id="view-quiz">
+                <div class="quiz-panel-layout">
+                    <!-- Left Column: Question Card -->
+                    <div class="quiz-main-card">
+                        <div class="quiz-header">
+                            <div class="quiz-progress-info">
+                                <div class="progress-text">Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span></div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" id="quiz-progress-fill"></div>
+                                </div>
+                            </div>
+                            <div class="quiz-timer" id="quiz-timer-display" style="display: none;">00:00</div>
+                        </div>
+
+                        <!-- Active Question Display -->
+                        <div class="question-container">
+                            <div class="question-text-display" id="question-text">
+                                What is the output of the following programming scenario?
+                            </div>
+                            <div class="options-container-list" id="options-list">
+                                <!-- Option cards dynamically inserted -->
+                            </div>
+                            
+                            <!-- Explanation Block (Study mode) -->
+                            <div class="explanation-card" id="explanation-card" style="display: none;">
+                                <div class="explanation-title">Explanation</div>
+                                <div class="explanation-text" id="explanation-text-content">
+                                    Explanation placeholder text.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Navigation Controls -->
+                        <div class="quiz-actions-footer">
+                            <button class="btn-secondary" id="btn-prev-q">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                                Back
+                            </button>
+                            <button class="btn-secondary" id="btn-check-q" style="display: none;">
+                                Check Answer
+                            </button>
+                            <button class="btn-primary" id="btn-next-q">
+                                Next
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                            </button>
+                            <button class="btn-primary" id="btn-submit-quiz" style="display: none; background: linear-gradient(135deg, var(--success), #059669); box-shadow: 0 4px 12px var(--success-glow);">
+                                Submit Quiz
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Navigation Grid -->
+                    <div class="nav-grid-card">
+                        <div class="nav-grid-title">Question Grid</div>
+                        <div class="nav-buttons-grid" id="question-grid">
+                            <!-- Dynamic grid dots -->
+                        </div>
+                        <button class="btn-flag" id="btn-flag-q">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>
+                            Flag for Review
+                        </button>
+                        <button class="btn-danger" id="btn-quit-quiz" style="margin-top: 10px;">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                            Cancel Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Results View -->
+            <div class="view-panel" id="view-results">
+                <div class="results-header-card">
+                    <!-- Gauge Score -->
+                    <div class="radial-gauge-container">
+                        <svg class="radial-svg" width="160" height="160" viewBox="0 0 160 160">
+                            <defs>
+                                <linearGradient id="score-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="50%" stop-color="#a855f7" />
+                                    <stop offset="100%" stop-color="#d946ef" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="radial-bg" cx="80" cy="80" r="70" />
+                            <circle class="radial-fill" id="results-circle-fill" cx="80" cy="80" r="70" />
+                        </svg>
+                        <div class="radial-text" id="results-percentage">0%</div>
+                    </div>
+
+                    <div class="score-summary-title" id="results-grade">Outstanding!</div>
+                    <div class="score-summary-subtitle" id="results-summary-text">You got 8 out of 10 questions correct. Excellent work!</div>
+
+                    <div class="results-stats-row">
+                        <div class="res-stat">
+                            <div class="res-stat-val correct" id="results-correct-count">0</div>
+                            <div class="res-stat-label">Correct</div>
+                        </div>
+                        <div class="res-stat">
+                            <div class="res-stat-val incorrect" id="results-incorrect-count">0</div>
+                            <div class="res-stat-label">Incorrect</div>
+                        </div>
+                        <div class="res-stat">
+                            <div class="res-stat-val" id="results-time-taken">0:00</div>
+                            <div class="res-stat-label">Time</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 16px; margin-top: 10px;">
+                        <button class="btn-primary" onclick="switchView('dashboard')">
+                            Back to Dashboard
+                        </button>
+                    </div>
+                </div>
+
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600; margin-bottom: 20px;">Review Answers</h2>
+                <!-- Question review list -->
+                <div class="review-container" id="review-list">
+                    <!-- Dynamic review items inserted here -->
+                </div>
+            </div>
+
+            <!-- Parser Configuration View -->
+            <div class="view-panel" id="view-parser">
+                <div style="margin-bottom: 30px; background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 24px;">
+                    <h2 style="font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 600; margin-bottom: 8px;">Parser Rules</h2>
+                    <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 20px; line-height: 1.5;">
+                        By default, QuizPro uses a smart adaptive AI-like algorithm to parse questions from your HTML documents. If a specific document is not parsing correctly, you can specify custom CSS selectors below to tell the parser how to read the file.
+                    </p>
+                    
+                    <div class="setup-form" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                        <div class="form-group">
+                            <label>Question Container (Block) Selector</label>
+                            <input type="text" id="cfg-block-sel" class="custom-input" placeholder="e.g. .mcq-card, .question-block">
+                        </div>
+                        <div class="form-group">
+                            <label>Question Text Selector</label>
+                            <input type="text" id="cfg-text-sel" class="custom-input" placeholder="e.g. .q-text, h3">
+                        </div>
+                        <div class="form-group">
+                            <label>Option Items Selector</label>
+                            <input type="text" id="cfg-option-sel" class="custom-input" placeholder="e.g. li, .option-item">
+                        </div>
+                        <div class="form-group">
+                            <label>Correct Indicator Selector</label>
+                            <input type="text" id="cfg-correct-sel" class="custom-input" placeholder="e.g. .correct, [checked]">
+                        </div>
+                        <div class="form-group">
+                            <label>Explanation Selector</label>
+                            <input type="text" id="cfg-explanation-sel" class="custom-input" placeholder="e.g. .exp, blockquote">
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px;">
+                        <button class="btn-secondary" onclick="resetParserSelectors()">Reset to Default Rules</button>
+                        <button class="btn-primary" onclick="applyParserSelectors()">Apply Selector Rules</button>
+                    </div>
+                </div>
+
+                <div class="parser-layout">
+                    <!-- Left: HTML preview -->
+                    <div>
+                        <div class="console-title">Select Bank to Debug</div>
+                        <select id="parser-debug-file-select" class="custom-select" style="width: 100%; margin-bottom: 12px;" onchange="updateParserDebugView()">
+                            <option value="">-- No File Loaded --</option>
+                        </select>
+                        <div class="console-title">Raw HTML Preview (First 5,000 characters)</div>
+                        <div class="parser-console" style="color: #94a3b8; background: #07090e;">
+                            <pre id="parser-html-preview">Select an HTML file in the sidebar or connect a directory to preview raw HTML.</pre>
+                        </div>
+                    </div>
+
+                    <!-- Right: Parsed JSON preview -->
+                    <div>
+                        <div style="display:flex; justify-content: space-between; align-items:center;">
+                            <div class="console-title" style="margin:0;">Parsed Result Preview</div>
+                            <span class="scan-indicator active" id="parser-preview-count" style="font-size:11px; display:none;">0 Questions Found</span>
+                        </div>
+                        <div class="parser-console" style="margin-top: 12px;">
+                            <pre id="parser-json-preview">Parsed questions JSON will appear here.</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Load scripts -->
+    <script src="parser.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
