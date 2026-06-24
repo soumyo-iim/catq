@@ -22,7 +22,7 @@ let state = {
 
 // Quiz Class
 class ActiveQuiz {
-    constructor(questions, mode, durationMinutes) {
+    constructor(questions, mode, durationMinutes, sourceFiles = []) {
         this.questions = questions; // Compiled question objects
         this.mode = mode; // 'study' or 'exam'
         this.durationSeconds = durationMinutes * 60;
@@ -33,6 +33,7 @@ class ActiveQuiz {
         this.checked = {}; // { qIdx: boolean } (revealed in study mode)
         this.startTime = Date.now();
         this.timerId = null;
+        this.sourceFiles = sourceFiles;
     }
 }
 
@@ -828,8 +829,16 @@ function startQuizHandler() {
         });
     }
 
+    // Get list of selected test names
+    const sourceFiles = Object.keys(state.selectedFiles)
+        .filter(path => state.selectedFiles[path])
+        .map(path => {
+            const parts = path.split('/');
+            return parts[parts.length - 1];
+        });
+
     // Initialize Quiz
-    state.activeQuiz = new ActiveQuiz(selectedQuestions, selectedMode, timeLimitMinutes);
+    state.activeQuiz = new ActiveQuiz(selectedQuestions, selectedMode, timeLimitMinutes, sourceFiles);
 
     // Setup active state in UI
     document.getElementById('nav-quiz').style.display = 'flex';
@@ -1205,7 +1214,8 @@ function submitQuiz() {
         total: total,
         percentage: percentage,
         mode: quiz.mode === 'study' ? 'Study' : 'Exam',
-        timeSpent: timeSpent
+        timeSpent: timeSpent,
+        sourceFiles: quiz.sourceFiles || []
     };
 
     state.history.unshift(record);
@@ -1352,9 +1362,18 @@ function renderHistory() {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'history-item';
         
+        let displaySources = 'General Practice';
+        if (item.sourceFiles && item.sourceFiles.length > 0) {
+            displaySources = item.sourceFiles.map(f => f.replace(/\.html$/i, '')).join(', ');
+            if (displaySources.length > 40) {
+                displaySources = displaySources.substring(0, 37) + '...';
+            }
+        }
+        
         itemDiv.innerHTML = `
             <div class="history-meta">
                 <span class="history-title">${item.score}/${item.total} Questions (${item.percentage}%)</span>
+                <span style="font-size: 11px; font-weight: 500; color: #a5b4fc; margin-top: 1px; display: block;">Test: ${displaySources}</span>
                 <span class="history-date">${item.date} • ${item.mode} Mode</span>
             </div>
             <span class="history-badge ${isPass ? 'pass' : 'fail'}">${isPass ? 'PASS' : 'FAIL'}</span>
@@ -1470,9 +1489,20 @@ function renderDetailedHistory() {
         const card = document.createElement('div');
         card.className = `history-card ${isPass ? 'pass' : 'fail'}`;
 
+        let displaySources = 'General Practice';
+        if (item.sourceFiles && item.sourceFiles.length > 0) {
+            displaySources = item.sourceFiles.map(f => f.replace(/\.html$/i, '')).join(', ');
+            if (displaySources.length > 60) {
+                displaySources = displaySources.substring(0, 57) + '...';
+            }
+        }
+
         card.innerHTML = `
             <div class="history-card-left">
                 <div class="history-card-score">${item.score} / ${item.total} Correct (${item.percentage}%)</div>
+                <div style="font-size: 13px; font-weight: 500; color: #a5b4fc; margin-top: 2px;">
+                    Test: ${displaySources}
+                </div>
                 <div class="history-card-meta">
                     <span>${item.date}</span>
                     <span>•</span>
