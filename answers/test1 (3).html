@@ -1,0 +1,166 @@
+
+  <html>
+  <head>
+      <style>
+          :root {
+              --primary-color: #2c3e50;
+              --secondary-color: #3498db;
+              --background-color: #f9fafb;
+              --text-color: #2c3e50;
+              --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          body { 
+              font-family: 'Segoe UI', Arial, sans-serif;
+              line-height: 1.8;
+              margin: 0;
+              padding: 20px;
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+
+          h3 { 
+              color: var(--primary-color);
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              border-bottom: 2px solid var(--secondary-color);
+              padding-bottom: 0.5rem;
+          }
+
+          .question { 
+              background: white;
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+              margin-bottom: 30px;
+              transition: transform 0.2s ease;
+          }
+
+          .question:hover {
+              transform: translateY(-5px);
+          }
+
+          .passage {
+              background: #f8f9fa;
+              padding: 15px;
+              border-left: 4px solid var(--secondary-color);
+              margin-bottom: 15px;
+              border-radius: 0 8px 8px 0;
+          }
+
+          .options { 
+              margin: 20px 0;
+          }
+
+          .options ul {
+              list-style: none;
+              padding: 0;
+          }
+
+          .options li {
+              padding: 12px 20px;
+              margin: 8px 0;
+              background: #fff;
+              border: 1px solid #e1e4e8;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          }
+
+          .options li:hover {
+              background: var(--secondary-color);
+              color: white;
+              border-color: var(--secondary-color);
+          }
+
+          .credits {
+              text-align: center;
+              margin-top: 40px;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+          }
+
+          .rainbow-text {
+              background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              font-weight: bold;
+              font-size: 24px;
+              animation: rainbow 8s linear infinite;
+          }
+
+          @keyframes rainbow {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 200% 50%; }
+          }
+
+          @media (max-width: 768px) {
+              .container {
+                  padding: 10px;
+              }
+
+              .question {
+                  padding: 15px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+  
+      <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">Arithmetic Test 3- Ratio & Proportion  (LOD 1)</h1>
+  
+      <div class="question">
+          <h3>Question 1</h3>
+          
+          <p><strong><p>If there are 56 people attending a birthday party which of the following is a possible ratio of women to men at the party?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 7:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 8:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 21:8</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 11:4</li></ul></div></div>
+      <div class="question">
+          <h3>Question 2</h3>
+          
+          <p><strong><p>Cereal loops are in a ratio of 5 : x : 3 in colors red, blue and green respectively. If there are a total of y loops in the box, in terms of x and y how many blue loops are in the box?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. y/(8x)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. xy/(8 + x)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. (8 + x)/(x + y)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. (x + y)/(8 + x)</li></ul></div></div>
+      <div class="question">
+          <h3>Question 3</h3>
+          
+          <p><strong><p>In a garden, there are flowers of two colors, blue and red. The ratio of the number of blue roses to the number of red tulips is 3 : 7. The ratio of red roses to the number of blue tulips is 2 : 1. If the ratio of the number of blue flowers to the number of red flowers is 35 : 76, then what is the ratio of the number of roses to the number of tulips?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 47:51</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 40:43</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 52:59</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li></ul></div></div>
+      <div class="question">
+          <h3>Question 4</h3>
+          
+          <p><strong><p>A cake is divided into three parts in the ratio 1:2:3. The cost of a cake is directly proportional to the square of its weight. If after dividing the cake, the loss in cost is Rs 39,600, then find the original cost of the cake before dividing it</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 62800</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 63800</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 64800</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 65800</li></ul></div></div>
+      <div class="question">
+          <h3>Question 5</h3>
+          
+          <p><strong><p>At a certain company, the ratio of managers to directors is 5:3. If 10 of the managers become directors, the new ratio will be 7:5. How many managers are currently at the company?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 120</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 150</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 180</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 210</li></ul></div></div></body></html>

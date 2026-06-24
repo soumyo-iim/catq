@@ -482,8 +482,8 @@ function renderFileList() {
     }
 
     function renderNode(node, container, currentDirPath = '') {
-        // Sort folders alphabetically
-        const folderNames = Object.keys(node.folders).sort();
+        // Sort folders naturally (ascending order, respecting numbers)
+        const folderNames = Object.keys(node.folders).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
         folderNames.forEach(folderName => {
             const folderPath = currentDirPath ? `${currentDirPath}/${folderName}` : folderName;
             const isCollapsed = state.collapsedFolders.has(folderPath);
@@ -526,8 +526,8 @@ function renderFileList() {
             renderNode(node.folders[folderName], childrenEl, folderPath);
         });
 
-        // Sort files alphabetically
-        const sortedFiles = node.files.sort((a, b) => a.name.localeCompare(b.name));
+        // Sort files naturally (ascending order, respecting numbers)
+        const sortedFiles = node.files.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
         sortedFiles.forEach(file => {
             const fileObj = file.fileObj;
             const count = fileObj.questions.length;

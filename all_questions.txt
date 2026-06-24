@@ -1,0 +1,553 @@
+﻿File: test1 (1).html
+Q: Question 1
+Text: <strong><p>The total marks scored by a student in three subjects are 339. If the ratio of marks scored in the first subject to those in the second subject is 3 : 7, and the ratio of marks scored in the second subject to those in the third subject is 5 : 9, then how many marks did the student score in the second subject?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 95</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 100</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 105</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 110</li>
+---
+File: test1 (1).html
+Q: Question 2
+Text: <strong><p>Four friends, Alex, Ben, Charlie, and David, are sharing a prize in a competition. The prize money is to be distributed among them in the ratio of 5 : 2 : 4 : 3. If Alex receives Rs 1,000 more than David, what is Charlie&#39;s share?&nbsp;
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 1000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 1500</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 2000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 2500</li>
+---
+File: test1 (1).html
+Q: Question 3
+Text: <strong><p>In a city, there are two types of vehicles, cars, and motorcycles. The ratio of the number of cars to the number of motorcycles is 5 : 3, with a total of 640 vehicles. If 30 more motorcycles are brought into the city, how many more cars should be introduced so that the ratio of cars to motorcycles becomes 14 : 9
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 15</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 20</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 25</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 30</li>
+---
+File: test1 (1).html
+Q: Question 4
+Text: <strong><p>In a recipe for a cake, the ratio of sugar to flour is 5:7. If the recipe calls for 20 grams of sugar, then how many grams of flour are needed?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 21</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 28</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 35</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 42</li>
+---
+File: test1 (1).html
+Q: Question 5
+Text: <strong><p>In a classroom, the ratio of red pens to blue pens is 7:6. If 4 more red pens are added to the classroom and 3 blue pens are removed, then the ratio of red pens to blue pens becomes 4:3. What is the total number of red and blue pens initially in the classroom?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 91</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 104</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 107</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li>
+---
+File: test1 (10).html
+Q: Question 1
+Text: <strong><p>In a specific mixture, the proportion of sugar to vinegar to oil is 2:50:100 by volume. This mixture is going to be adjusted so that the sugar to vinegar ratio is&nbsp; doubled , and the sugar to oil ratio is halved. Given that in the new mixture there will be 100 cubic centimeters of vinegar, how many cubic centimeters of oil will it have?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 200 Cubic centimeters </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 400 Cubic centimeters </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 600 Cubic centimeters </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 800 Cubic centimeters </li>
+---
+File: test1 (10).html
+Q: Question 2
+Text: <strong><p>The weekly art pieces created by artists M and N are in the ratio 5 : 6. If the total art pieces created by M in 4 weeks is a multiple of 9, and the total art pieces created by N in 2 weeks is a multiple of 15, then the minimum possible number of art pieces created by M in one week is
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 225</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (10).html
+Q: Question 3
+Text: <strong><p>In an apartment building that has 490 units, 4 out of every 7 units are currently rented, including 1/5 of the one-bedroom units. If, of the rented apartments, there is a 6:1 ratio of two-bedroom units to one-bedroom units, and the building only consists of two-bedroom and one-bedroom units, how many two-bedroom units are not rented?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 50</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (10).html
+Q: Question 4
+Text: <strong><p>In the initial P chapters of a book series, the ratio of liked to disliked chapters by a reader was 1:2. Throughout the next Q chapters, the preference ratio shifted to 1:3 in favor of disliked chapters. Given that P:Q equals 4:5, what is the overall ratio of liked to disliked chapters across all P+Q chapters read?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 30:71</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 31:76</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 31:78</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li>
+---
+File: test1 (10).html
+Q: Question 5
+Text: <strong><p>In a garden, the ratio of rose to sunflower plants is 2:5, the ratio of rose to tulip plants is 3:8, and the ratio of sunflower to daisy plants is 9:2. What is the maximum total number of sunflower and tulip plants combined if the maximum combined number of rose and daisy plants is fewer than 85?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 279</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (11).html
+Q: Question 1
+Text: <strong><p>A beaker contains milk and water in the ratio 5 : 4. If a person removes 30 Litres of this mixture and replaces it with pure water, the ratio of milk to water becomes 1 : 2. What is initial Quantity of Solution. (In Litres).
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 75</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (11).html
+Q: Question 2
+Text: <strong><p>A tank contains a mixture of oil and vinegar in the ratio 7:5. If a person removes 40 liters of this mixture and replaces it with pure vinegar, the ratio of oil to vinegar becomes 3:4. What was the initial quantity of the mixture in the tank? (In Liters)&nbsp;
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Range (147-151)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Range 155 to 160</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Range 161 to 165</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Range 166 to 170</li>
+---
+File: test1 (11).html
+Q: Question 3
+Text: <strong><p>A fuel tank was found to contain an impure fuel mixture consisting of petrol and ethanol in the ratio 7:5. If 9 liters of the mixture is removed from the tank and replaced with 9 liters of ethanol, the new ratio of petrol to ethanol becomes 7:9. Calculate the initial amount of petrol in the tank.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 21</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (11).html
+Q: Question 4
+Text: <strong><p>From a container filled with milk, 9 litres of milk are drawn and replaced with water. Next, from the same container, 9&nbsp;litres are drawn and again replaced with water. If the volumes of milk and water in the container are now in the ratio of 16 : 9, then the capacity of the container, in litres, is.&nbsp;
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 45</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (11).html
+Q: Question 5
+Text: <strong><p>A jug is filled with juice. Three-fourths of its content is poured out and replaced with soda. If this process of pouring out three-fourths of the content and replacing it with soda is repeated three more times, then what is the final ratio of juice to soda in the jug?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1:255</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 1:256</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 1:63</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 1:64</li>
+---
+File: test1 (11).html
+Q: Question 6
+Text: <strong><p>A barrel contains 30 liters of pure honey. 3 liters of honey are drawn out and replaced with syrup. This process is repeated twice more. What is the final ratio of honey to syrup in the barrel?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 729/270</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 729/720</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 729/271</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 	729/749</li>
+---
+File: test1 (12).html
+Q: Question 1
+Text: <strong><p>A chemical solution contains 2x&nbsp;liters of acid and 40 liters of base. When x-30&nbsp;liters of the mixture is removed and replaced with the same quantity of base, the ratio of acid to base in the resultant solution becomes 3:2. Find the value of x. (Where x &gt; 30)
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 80</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (12).html
+Q: Question 2
+Text: <strong><p>A container initially holds 100 liters of pure fruit juice. First, 10 liters of water is added, and then 20 liters of the solution is removed. Next, 30 liters of water is added, and again 20 liters of the solution is removed. Find the amount of fruit juice (in liters) remaining in the solution now.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 68.18Â liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 65.18Â liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 74.18Â liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 60.18Â liters</li>
+---
+File: test1 (12).html
+Q: Question 3
+Text: <strong><p>A barrel initially contains 60 liters of pure honey. 12 liters of honey is removed and replaced with syrup. This process is repeated twice. Find the amount of honey (in liters) remaining in the barrel now.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 30.4 liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 34.4 liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 38.4 liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 42.4 liters</li>
+---
+File: test1 (12).html
+Q: Question 4
+Text: <strong><p>From a container filled with milk, 15&nbsp;litres of milk are drawn and replaced with water. Next, from the same container, 15&nbsp;litres are drawn and again replaced with water. If the volumes of milk and water in the container are now in the ratio of 36&nbsp;: 13, then the capacity of the container, in litres, is
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 105</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (13).html
+Q: Question 1
+Text: <strong><p>From a container filled with milk, 9 litres of milk are drawn and replaced with water. Next, from the same container, 9 litres are drawn and again replaced with water. Next, from the same container, 9 litres are drawn and again replaced with water. If the volumes of milk and water in the container are now in the ratio of 64 : 61, then the capacity of the container, in litres, is
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 45</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (13).html
+Q: Question 2
+Text: <strong><p><strong>A jar contains a mixture of 175 ml water and 700 ml alcohol. Gopal takes out 87.5 ml of the mixture and substitutes it by water of the same amount. The process is repeated once again. Find Final Quantity of Water .</strong>
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 308</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (13).html
+Q: Question 3
+Text: <strong><p>A Container contains X Litres of Milk. A thief stole 50 Litres of Milk and replaced it with the same quantity of water. He repeated the same process further two times. And thus Milk in the container is only X-122 litres. Then what is the quantity of water in the final mixture?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 122 Litre</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 124 Litre</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 128 Litre</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 250 Litre</li>
+---
+File: test1 (13).html
+Q: Question 4
+Text: <strong><p>A barrel is filled with olive oil. Two-fifths of its content is poured out and replaced with vinegar. If this process of pouring out two-fifths of the content and replacing it with vinegar is repeated three more times, then what is the final ratio of olive oil to vinegar in the barrel?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 81/544</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 81/532</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 81/555</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 81/567</li>
+---
+File: test1 (13).html
+Q: Question 5
+Text: <strong><p>50 litres of a cocktail of vodka and &lsquo;lime cordial&rsquo; contains 32 litres of vodka. Initially, 10 litres of the cocktail is taken out and is replaced with water, and then, 20 litres of the resulting cocktail is taken out and is replaced with lime cordial. Final value of vodka in the final cocktail is
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 13.36 litres</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 11.36 litres</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 15.36 litres</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 19.36 litres</li>
+---
+File: test1 (14).html
+Q: Question 1
+Text: <strong><p>A fuel tank contains a mixture of petrol and diesel in the ratio 3:2. If 20 litres of the mixture is replaced with petrol, then the new ratio of petrol to diesel becomes 7:3. Instead, if &#39;b&#39; litres of the mixture was replaced with diesel, the amount of petrol and diesel in the tank would have become equal. Find the value of 3b.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 40</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (14).html
+Q: Question 2
+Text: <strong><p>A bottle of fruit juice was found to be diluted. It contains apple juice and orange juice in the ratio 5:4. If 12 litres of the mixture is taken out and the remaining mixture is mixed with 12 litres of orange juice, the new ratio becomes 5:7. Find the initial amount of apple juice in the bottle.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 70/3 liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 50/3 liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 80/3 liters</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 40/3 liters</li>
+---
+File: test1 (14).html
+Q: Question 3
+Text: <strong><p>A tank contains 120 litres of pure honey. Using a ladle, 24 litres of honey is removed and replaced with water. Find the minimum number of times this procedure has to be followed so that the quantity of honey in the tank falls below 60 litres.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 4</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 5</li>
+---
+File: test1 (14).html
+Q: Question 4
+Text: <strong><p>A barrel contains 150 litres of pure fruit juice. Using a jug, 30 litres of juice is removed and replaced with water. Find the minimum number of times this procedure has to be followed so that the quantity of fruit juice in the barrel falls below 75 litres.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 4</li>
+---
+File: test1 (15).html
+Q: Question 1
+Text: <strong></strong>
+Opts: 
+      <li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">1. 5</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">2. 6</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">3. 7</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">4. 8</li>
+---
+File: test1 (15).html
+Q: Question 2
+Text: <strong></strong>
+Opts: 
+      <li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">1. 4</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">2. 5</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">3. 6</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">4. 7</li>
+---
+File: test1 (15).html
+Q: Question 3
+Text: <strong></strong>
+Opts: 
+      <li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">1. 81:524</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">2. 81:504</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">3. 81:544</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">4. 81:574</li>
+---
+File: test1 (15).html
+Q: Question 5
+Text: <strong></strong>
+Opts: 
+      <li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">1. 
+</li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">2. </li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">3. </li><li onclick="this.style.background=&#39;var(--secondary-color)&#39;; this.style.color=&#39;white&#39;;">4. </li>
+---
+File: test1 (16).html
+Q: Question 1
+Text: <strong><p>Four friends&mdash;Rahul, Karan, Aman, and Suresh&mdash;decided to contribute towards a cricket tournament prize fund of Rs 48,000. Rahul contributed one-fourth of the sum contributed by the other three. Karan contributed three-sevenths of the sum contributed by the other three. Aman contributed two-sixths of the sum contributed by the other three. Find the amount (in Rs) contributed by Suresh.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 10000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 12000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 15000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 20000</li>
+---
+File: test1 (16).html
+Q: Question 2
+Text: <strong><p>A farmer distributes K sacks of rice among his four workers&mdash;P, Q, R, and S&mdash;such that twice the number of sacks with P is equal to four times the number of sacks with Q, which in turn is equal to 6 times the number of sacks with R, which in turn is equal to 8 times the number of sacks with S. Find the minimum value of K.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 25</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (16).html
+Q: Question 3
+Text: <strong><p>A bookstore owner stocks novels, comics, and magazines in the ratio 2:5:8. The number of comics exceeds the number of novels by a quantity that is a multiple of both 6 and 7. What is the minimum number of books (Novels + Comics + Magazines)&nbsp;in the store?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 210</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (16).html
+Q: Question 4
+Text: <strong><p>Three friends&mdash;P, Q, and R&mdash;have marbles with them. Seven times the number of marbles that P has is equal to five times the number of marbles that Q has, while six times the number of marbles that Q has is equal to eleven times the number of marbles that R has. What is the minimum total number of marbles that P, Q, and R have together?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 174</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (16).html
+Q: Question 5
+Text: <strong><p>A warehouse stores boxes of different materials: 3 wooden boxes, 6 plastic boxes, and 9 metal boxes, which weigh the same as another storage unit containing 5 plastic boxes, 8 wooden boxes, and 5 metal boxes, or a unit containing 7 metal boxes, 10 plastic boxes, and 3 wooden boxes. Determine the number of wooden boxes in the storage unit that holds triple weight.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 49</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (17).html
+Q: Question 1
+Text: <strong><p>A fruit seller has a stock of mangoes, bananas, and apples, with at least one fruit of each type. At the beginning of the day, mangoes constitute 2/5&nbsp;of the total stock. That day, he sells half of the mangoes, 96 bananas, and 2/5&nbsp; of the apples. By the end of the day, he has sold 1/2â€‹ of the total fruits he initially had. What is the smallest possible total number of fruits in stock at the beginning of the day?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 340</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (17).html
+Q: Question 2
+Text: <strong><p>Garima had only Rs. 200. Rs. 500 and Rs. 2000 notes in her wallet. She goes to Shoppers Stop. purchases some dresses and gives half of her Rs. 2000 notes &amp; in turn receives the same number of Rs. 200 notes. She then goes to a restaurant and gives all her Rs. 500 notes and receives thirty Rs. 2000 notes, which increases the number of Rs. 2000 notes she had by 75%. Now if she has fifty Rs. 200 notes. What was the original number of Rs. 2000 notes she had at the start?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 60</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 65</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 80</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 70</li>
+---
+File: test1 (17).html
+Q: Question 3
+Text: <strong><p>Two friends,&nbsp;Riya&nbsp;and&nbsp;Tina, jointly own a bakery. The ratio of their ownership (In terms of area) in the bakery is&nbsp;3:2. They produce two types of baked goods:&nbsp;cakes&nbsp;and&nbsp;cookies. The ratio of the area in the bakery dedicated to cakes and cookies for the entire bakery is&nbsp;7:3. On Riya&rsquo;s portion of the bakery, the ratio of cakes to cookies is&nbsp;4:1. What is the ratio of cakes to cookies for Tina&rsquo;s portion?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 13:10</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 10:9</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 11:9</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 17:14</li>
+---
+File: test1 (17).html
+Q: Question 4
+Text: <strong><p>In a cricket coaching camp, on Saturday, 1/5â€‹ of the players were absent, while 4/5â€‹ were present. On Sunday, 1/5 â€‹ of the players who were absent on Saturday joined the practice session, while the rest remained absent.&nbsp;1/5 â€‹of the players who were present on Saturday were absent, while the rest continued to attend. What fraction of the players attended the coaching session on Sunday?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 13/25</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 17/25</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 19/25</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 21/25</li>
+---
+File: test1 (17).html
+Q: Question 5
+Text: <strong><p>In a factory, the number of workers in three departments was initially in the ratio 5 : 6 : 7. Later, the number of workers in each department was increased by 40. As a result, the new ratio became 7 : 8 : 9. What was the total number of workers in all three departments before the increase?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 360</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (18).html
+Q: Question 1
+Text: <strong><p>The weights of three boxes, X, Y, and Z, are initially in the ratio 9 : 4 : 6. In what ratio should the weights of Y and Z be increased so that the new ratio becomes 8 : 5 : 9, respectively?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 11:20</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 13:33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 17:35</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 15:31</li>
+---
+File: test1 (18).html
+Q: Question 2
+Text: <strong><p>Amit, Bharat, and Chetan earn their monthly incomes in the ratio 7 : 9 : 11. Their monthly savings are in the ratio 5 : 6 : 7. Bharat spends 3/5â€‹ of his income every month.What is the ratio of their monthly expenses?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 20:25:33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 21:27:30</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 20:27:34</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 20:23:31</li>
+---
+File: test1 (18).html
+Q: Question 3
+Text: <strong><p>Ravi, Karan, Sneha, and Tia purchased a laptop for Rs 120.&nbsp;Ravi paid one-half of the sum of the amounts paid by the other three.&nbsp;Karan paid one-third of the sum of the amounts paid by the other three.&nbsp;Sneha paid one-fourth of the sum of the amounts paid by the other three. How much did Tia pay in (Rs)
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 26</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (18).html
+Q: Question 4
+Text: <strong><p>During a Donald Trump political rally, every attendee wore either a red MAGA hat or a blue USA cap. The ratio of the number of men wearing red MAGA hats to the number of women wearing blue USA caps is 5 : 9. The ratio of the number of men wearing blue USA caps to the number of women wearing red MAGA hats is 7 : 6. The ratio of the total number of attendees wearing red MAGA hats to those wearing blue USA caps is 25 : 33. Find the ratio of the total number of men to the total number of women attending the rally.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 510:523</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 535:567</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 523:547</li>
+---
+File: test1 (18).html
+Q: Question 5
+Text: <strong><p>The Cost of an iron rod varies directly with the cube of its thickness. An iron rod broke into 3 pieces, whose thicknesses were in the ratio 3 : 2 : 5. After selling the broken pieces, the manufacturer incurred a loss of Rs 84000. Find the original Cost value (In Rs) of the iron rod before breaking.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 100000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (19).html
+Q: Question 1
+Text: <strong><p>A chemical solution contains &lsquo;M&rsquo; liters of acid and 36 liters of water. To this solution, 3 liters of acid and &lsquo;N&quot;&nbsp;liters of another chemical are added. Now, the ratio of acid, water, and the new chemical in the resulting solution is 5 : M&nbsp;: 7 respectively. What is the value (in liters) of M+N.&nbsp;
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (19).html
+Q: Question 2
+Text: <strong><p>A drone can fly at a speed of 60 kmph when it carries no package. However, its speed decreases by an amount proportional to the square root of the weight (in kg) of the package it carries. When carrying a 25 kg package, its speed reduces to 50 kmph.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 52.5 kg</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 56.25 kg</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 58.5 kg</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li>
+---
+File: test1 (19).html
+Q: Question 3
+Text: <strong><p>At a charity fundraiser, the ratio of donors from Organization X to Organization Y was 5:6. Among the donors from Organization X, the ratio of male to female donors was 3:7. Among the female donors from Organization X, the ratio of those who donated in cash to those who donated in kind was 1:3. What is the minimum number of donors who participated in the fundraiser?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 88</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (19).html
+Q: Question 4
+Text: <strong><p>Raman steals four gallons of liquid soap kept in a train compartment bathroom from a container that is full of liquid soap. He then fills it with water to avoid detection. unable to resist his temptation he steals 4 gallon of the mixture again. When the liquid soap is check at the station it is found that the ratio of liquid soap now left in the container to that of the water is 36:13. What was the initial amount of liquid soap in the container if it is know that the liquid is neither used nor augmented by anybody else during the entire period ?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 21 gallons</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 18 gallons</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 28 gallons</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 25 gallons</li>
+---
+File: test1 (19).html
+Q: Question 5
+Text: <strong><p>From a 100 litre container having milk and water in the ratio 8 : 7, 10 litres of solution is removed and replaced with 20 litres of milk. Again 20 litres of solution is removed and replaced with 30 litres of milk. Find the amount of milk in the solution now.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 80.6</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 85.6</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 89.9</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 92.6</li>
+---
+File: test1 (2).html
+Q: Question 1
+Text: <strong><p>An inheritance of Rs x was distributed among four charities, Charity A, Charity B, Charity C, and Charity D, in the ratio of 1/3 : 1/5 : 1/6 : 1/9. If the difference between the amounts received by Charity B and Charity D is Rs 832, then what is the value of x?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 7792 </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 7692</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 7592</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 7892</li>
+---
+File: test1 (2).html
+Q: Question 2
+Text: <strong><p>If a sum of Rs&nbsp;1,180 is to be divided among A, B and C, such that 2 times A&rsquo;s share, 5 times B&rsquo;s share and 7 times C&rsquo;s share, are equal, then A&rsquo;s share is
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 500</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 600</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 700</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 800</li>
+---
+File: test1 (2).html
+Q: Question 3
+Text: <strong><p>In a pantry, there are packets of rice and packets of pasta. The total number of packets is 12. The number of rice packets to pasta packets is in the ratio of 1:2. If each rice packet costs Rs 10 and each pasta packet costs Rs 50, what is the total value of all the packets in the pantry?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 110 Rs</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 220 Rs</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 330 Rs </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 440 Rs</li>
+---
+File: test1 (2).html
+Q: Question 4
+Text: <strong><p>In the collection of a certain bookstore, the ratio of fiction books to non-fiction books was initially 3 to 8. After three fiction books were removed from the collection and two non-fiction books were added, the new ratio became 1 to 3. How many non-fiction books were there originally?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 44</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 66</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 88</li>
+---
+File: test1 (2).html
+Q: Question 5
+Text: <strong><p>If a : b is 2 : 5, b : c is 3 : 5 and c : d is 5 : 4, what is the ratio a : b : c : d?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 6 : 15 : 25 : 10</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 12 : 15 : 25 : 20</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 6 : 15 : 25 : 20</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 6 : 15 : 25 : 40</li>
+---
+File: test1 (3).html
+Q: Question 1
+Text: <strong><p>If there are 56 people attending a birthday party which of the following is a possible ratio of women to men at the party?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 7:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 8:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 21:8</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 11:4</li>
+---
+File: test1 (3).html
+Q: Question 2
+Text: <strong><p>Cereal loops are in a ratio of 5 : x : 3 in colors red, blue and green respectively. If there are a total of y loops in the box, in terms of x and y how many blue loops are in the box?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. y/(8x)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. xy/(8 + x)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. (8 + x)/(x + y)</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. (x + y)/(8 + x)</li>
+---
+File: test1 (3).html
+Q: Question 3
+Text: <strong><p>In a garden, there are flowers of two colors, blue and red. The ratio of the number of blue roses to the number of red tulips is 3 : 7. The ratio of red roses to the number of blue tulips is 2 : 1. If the ratio of the number of blue flowers to the number of red flowers is 35 : 76, then what is the ratio of the number of roses to the number of tulips?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 47:51</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 40:43</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 52:59</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li>
+---
+File: test1 (3).html
+Q: Question 4
+Text: <strong><p>A cake is divided into three parts in the ratio 1:2:3. The cost of a cake is directly proportional to the square of its weight. If after dividing the cake, the loss in cost is Rs 39,600, then find the original cost of the cake before dividing it
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 62800</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 63800</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 64800</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 65800</li>
+---
+File: test1 (3).html
+Q: Question 5
+Text: <strong><p>At a certain company, the ratio of managers to directors is 5:3. If 10 of the managers become directors, the new ratio will be 7:5. How many managers are currently at the company?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 120</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 150</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 180</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 210</li>
+---
+File: test1 (4).html
+Q: Question 1
+Text: <strong><p>The number of oranges in three basket are in the ratio 3 : 4 : 5. In which ratio the no. of oranges in first two basket must be increased so that the new ratio becomes 5 : 4 : 3
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 2:3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 3:4</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 2:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 4:5</li>
+---
+File: test1 (4).html
+Q: Question 2
+Text: <strong><p>The girl:boy ratio in class A was 1:3 and the same ratio in Class B was 2:1. When the two classes were combined, the ratio became 1:1. If class A had 24 girls, how many students did class B have
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 144</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (4).html
+Q: Question 3
+Text: <strong><p>A drink consists of coffee and milk in 2:3 . If a new drink is prepared by combining this drink with milk in the ratio 1:6,&nbsp; what is the ratio of coffee to milk in the new drink?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 2:15</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 2:33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 2:17</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li>
+---
+File: test1 (4).html
+Q: Question 4
+Text: <strong><p>If&nbsp;A+B=C,&nbsp; A+D=B,&nbsp;2C=3D and A, B, C, and D are positive integers, what is the least possible value of B.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 5</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (4).html
+Q: Question 5
+Text: <strong><p>The traveling incurs two expenses one is constant and other is depends upon number of travelers. When there are 30 travelers, total expenses is Rs. 46000. When there are 12 travelers, then expenses is Rs. 19000. Find the expenses for 5 travelers.(In Rs)
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 8500</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (5).html
+Q: Question 1
+Text: <strong><p>If&nbsp;abcd &ne; 0,&nbsp;a:b:c=2:3:4,&nbsp;c:d=5:6&nbsp; and&nbsp;a+b+c&ndash;d=42, what is the value of&nbsp;d?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 12</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 24</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 36</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 48</li>
+---
+File: test1 (5).html
+Q: Question 2
+Text: <strong><p>A basket of 2 apples, 4 oranges and 6 mangoes costs the same as a basket of 1 apple, 4 oranges and 8 mangoes, or a basket of 8 oranges and 7 mangoes. Then the number of mangoes in a basket of mangoes that has the same cost as the other baskets is
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 13</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (5).html
+Q: Question 3
+Text: <strong><p>A , B , C are 3 natural numbers such that A:B = 5:7 and (A+C)/(B+C)=32/39 . Find ratio of B/(B+C)&nbsp;
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1:3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 33:59</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 49:78</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 49:73</li>
+---
+File: test1 (5).html
+Q: Question 4
+Text: <strong><p>The students in three batches in school is in the ratio of 2:3:5. If 20 students in each batch are increased than the ratio changes to 4:5:7. The total number of students in the three batches before the increase was,
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 100</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (5).html
+Q: Question 5
+Text: <strong><p>Expenditure of a mess is partly fixed and partly variable. If There are 5 students then Total expenditure is Rs. 1050. If there are 8 student then The Total expenditure is Rs. 1200. Find the average expenditure when there are 15 students in the mess.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 103.33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 105.33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 107.33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 109.33</li>
+---
+File: test1 (6).html
+Q: Question 1
+Text: <strong><p>The ratio of income of X and Y is 3:4. The ratio of their expenditure is 4:5. What is the ratio of their savings if the savings of X is one fourth of his income?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 2:3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 5:4</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 12:19</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 1:2</li>
+---
+File: test1 (6).html
+Q: Question 2
+Text: <strong><p>Sixty apples are distributed among four baskets in a way that the ratio of apples in the four baskets is 1:2:3:4. What is the minimum number of apples that must be moved so that the distribution of apples in the four baskets becomes 1:1:1:1.&nbsp;
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 12</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (6).html
+Q: Question 3
+Text: <strong><p>The cost of diamond varies directly as the square of its weight. A diamond weight&nbsp;10&nbsp;grams cost&nbsp;Rs8,000. If it breaks into two pieces whose weights are in the ratio&nbsp;3:2, then the loss incurred (in rupees)
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 3840</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (6).html
+Q: Question 4
+Text: <strong><p>A salad dressing requires oil, vinegar, and water in the ratio 2 : 1 : 3. If Oliver has 1 cup of oil, 1/3 cup of vinegar, and 2 cups of water, what is the maximum number of cups of dressing that he can mix?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (6).html
+Q: Question 5
+Text: <strong><p>A treasure chest filled with 4 gold coins, 5 silver coins, and 10 bronze coins weighs the same as a chest containing 2 silver coins, 7 gold coins, and 7 bronze coins, or a chest containing 6 bronze coins, 11 silver coins, and 4 gold coins. Determine the number of gold coins in the chest that holds the same weight.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 12</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (7).html
+Q: Question 1
+Text: <strong><p>There are only blue, red, and white chips in a bag. There are 4 more blue chips than white chips in the bag. If a number of red chips equal to twice the number of white chips were added, the number of red chips would double, and half the total number of chips would be blue chips. What fraction of the chips in the bag are red?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1/2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 1/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 1/4</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 1/5</li>
+---
+File: test1 (7).html
+Q: Question 2
+Text: <strong><p>Rs. 4199 was intended to be divided among P, Q, R and S in the ratio 2:3:5:7 respectively. By mistake, the money got divided in the reciprocal of the intended ratio. What would be the gain of P (in Rupees) due to this mistake?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1291</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (7).html
+Q: Question 3
+Text: <strong><p>If Thomas divides half of his comic books in a 1:2 ratio between Alex and Jordan, respectively, then Alex will have one fourth as many comic books as Jordan, who will in turn have twice as many comic books as Thomas. If Alex currently owns 2 comic books, then how many more comic books does Thomas currently own than Jordan?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 8</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li>
+---
+File: test1 (7).html
+Q: Question 4
+Text: <strong><p>If there are four positive integers a, b, c and d in the ratio 1:2:3:4 and their sum is a perfect square, what cannot be the value of any of the four number?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 10</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 30</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 90</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 100</li>
+---
+File: test1 (7).html
+Q: Question 5
+Text: <strong><p>Given a + 1 = b + 2 = c + 3 = d + 4 = a + b + c + d + 5, then what is the value of a + b + c + d?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. -8/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. -10/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li>
+---
+File: test1 (8).html
+Q: Question 1
+Text: <strong><p>The employee-manager ratio at a certain company was 25:4, but when the company laid off eighty employees for budgetary reasons, seventeen managers resigned in protest. Which of the following could be the new employee-manager ratio at the company?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 63:12</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 95:17</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 33:5</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 55:6</li>
+---
+File: test1 (8).html
+Q: Question 2
+Text: <strong><p>A toy store has only dolls, cars, and blocks in the ratio 3:7:10. The number of cars is more than the number of dolls by a number that is a multiple of both 5 and 8. What is the minimum number of toys in the store?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 400</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 100</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 200</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 300</li>
+---
+File: test1 (8).html
+Q: Question 3
+Text: <strong><p>A particular electronics store sells only laptops and tablets. The ratio of laptops to tablets is 3:4, the ratio of touchscreen tablets to non-touchscreen tablets is 7:3, and the ratio of premium laptops to regular laptops is 3:2. If there are 108 premium laptops, what is the ratio of non-touchscreen tablets to regular laptops?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 1:2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 1:3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 2:3</li>
+---
+File: test1 (8).html
+Q: Question 4
+Text: <strong><p>Anna wants to distribute chocolates among her four children in the ratio&nbsp; 1/3&nbsp;: 1/4: 1/5&nbsp;: 1/6. How many minimum chocolates should she buy, so that she can distribute the chocolates in the given ratio?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 30</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 45</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 57</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 90</li>
+---
+File: test1 (8).html
+Q: Question 5
+Text: <strong><p>On Sunday, in a pet shelter, the ratio of the number of cats to the number of dogs was 4:5. On Monday, the shelter received 35 more cats and dogs, then the ratio of cats to dogs became 5:8. Assuming that no animal left the shelter or was adopted and the shelter had cats and dogs only, what is the least number of dogs that were there in the shelter on Sunday?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 55</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 60</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 65</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 70</li>
+---
+File: test1 (9).html
+Q: Question 1
+Text: <strong><p>In 2016, two employees at a company, Alex and Jordan, had their salaries in the proportion 2:3. Over the course of a year, Alex&#39;s salary changed following a ratio of 3:4, while Jordan&#39;s salary adjusted at a ratio of 5:7. By 2017, the gap between their earnings amounted to Rs 2,300. What is the annual income of Jordan in 2017?
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 6000</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 6300</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 6600</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 6900</li>
+---
+File: test1 (9).html
+Q: Question 2
+Text: <strong><p>A collector has a variety of coins in a collection, with coins of three different values. The proportion of coins worth Rs 1 to those worth Rs2 is 5:7 respectively, and the proportion of coins worth Rs 2 to those worth Rs 5 is 7:6 respectively. If the total monetary value of the Rs 1 coins in the collection amounts to Rs 15, determine the total value of the coins worth Rs 5.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 50</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 70</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 90</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 110</li>
+---
+File: test1 (9).html
+Q: Question 3
+Text: <strong><p>Total expenses of a hostel are partly constant and partly vary directly as the number of boarders. When the number of boarders are 120 and 100 the total expenses are Rs. 2000 and Rs. 1700 respectively. Find the total number of boarders if the total expense is Rs. 1880
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 100</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 112</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 115</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 118</li>
+---
+File: test1 (9).html
+Q: Question 4
+Text: <strong><p>Sachin presents a special emerald necklace to Shruti on their anniversary. Unfortunately, the necklace breaks and splits into three segments, with their weights proportioned as 2:3:4. The worth of each segment is directly related to the square of its weight. Initially, the necklace was valued at Rs. 24300. Determine the&nbsp; loss&nbsp; in value caused by the damage.
+Opts: 
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 13600</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs. 14600</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs. 15600</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs. 16600</li>
+---

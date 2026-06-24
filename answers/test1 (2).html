@@ -1,0 +1,166 @@
+
+  <html>
+  <head>
+      <style>
+          :root {
+              --primary-color: #2c3e50;
+              --secondary-color: #3498db;
+              --background-color: #f9fafb;
+              --text-color: #2c3e50;
+              --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          body { 
+              font-family: 'Segoe UI', Arial, sans-serif;
+              line-height: 1.8;
+              margin: 0;
+              padding: 20px;
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+
+          h3 { 
+              color: var(--primary-color);
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              border-bottom: 2px solid var(--secondary-color);
+              padding-bottom: 0.5rem;
+          }
+
+          .question { 
+              background: white;
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+              margin-bottom: 30px;
+              transition: transform 0.2s ease;
+          }
+
+          .question:hover {
+              transform: translateY(-5px);
+          }
+
+          .passage {
+              background: #f8f9fa;
+              padding: 15px;
+              border-left: 4px solid var(--secondary-color);
+              margin-bottom: 15px;
+              border-radius: 0 8px 8px 0;
+          }
+
+          .options { 
+              margin: 20px 0;
+          }
+
+          .options ul {
+              list-style: none;
+              padding: 0;
+          }
+
+          .options li {
+              padding: 12px 20px;
+              margin: 8px 0;
+              background: #fff;
+              border: 1px solid #e1e4e8;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          }
+
+          .options li:hover {
+              background: var(--secondary-color);
+              color: white;
+              border-color: var(--secondary-color);
+          }
+
+          .credits {
+              text-align: center;
+              margin-top: 40px;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+          }
+
+          .rainbow-text {
+              background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              font-weight: bold;
+              font-size: 24px;
+              animation: rainbow 8s linear infinite;
+          }
+
+          @keyframes rainbow {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 200% 50%; }
+          }
+
+          @media (max-width: 768px) {
+              .container {
+                  padding: 10px;
+              }
+
+              .question {
+                  padding: 15px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+  
+      <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">Arithmetic Test 2- Ratio & Proportion  (LOD 1)</h1>
+  
+      <div class="question">
+          <h3>Question 1</h3>
+          
+          <p><strong><p>An inheritance of Rs x was distributed among four charities, Charity A, Charity B, Charity C, and Charity D, in the ratio of 1/3 : 1/5 : 1/6 : 1/9. If the difference between the amounts received by Charity B and Charity D is Rs 832, then what is the value of x?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 7792 </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 7692</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 7592</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 7892</li></ul></div></div>
+      <div class="question">
+          <h3>Question 2</h3>
+          
+          <p><strong><p>If a sum of Rs&nbsp;1,180 is to be divided among A, B and C, such that 2 times A&rsquo;s share, 5 times B&rsquo;s share and 7 times C&rsquo;s share, are equal, then A&rsquo;s share is</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. Rs 500</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. Rs 600</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. Rs 700</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. Rs 800</li></ul></div></div>
+      <div class="question">
+          <h3>Question 3</h3>
+          
+          <p><strong><p>In a pantry, there are packets of rice and packets of pasta. The total number of packets is 12. The number of rice packets to pasta packets is in the ratio of 1:2. If each rice packet costs Rs 10 and each pasta packet costs Rs 50, what is the total value of all the packets in the pantry?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 110 Rs</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 220 Rs</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 330 Rs </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 440 Rs</li></ul></div></div>
+      <div class="question">
+          <h3>Question 4</h3>
+          
+          <p><strong><p>In the collection of a certain bookstore, the ratio of fiction books to non-fiction books was initially 3 to 8. After three fiction books were removed from the collection and two non-fiction books were added, the new ratio became 1 to 3. How many non-fiction books were there originally?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 44</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 66</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 88</li></ul></div></div>
+      <div class="question">
+          <h3>Question 5</h3>
+          
+          <p><strong><p>If a : b is 2 : 5, b : c is 3 : 5 and c : d is 5 : 4, what is the ratio a : b : c : d?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 6 : 15 : 25 : 10</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 12 : 15 : 25 : 20</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 6 : 15 : 25 : 20</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 6 : 15 : 25 : 40</li></ul></div></div></body></html>

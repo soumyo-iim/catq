@@ -1,0 +1,166 @@
+
+  <html>
+  <head>
+      <style>
+          :root {
+              --primary-color: #2c3e50;
+              --secondary-color: #3498db;
+              --background-color: #f9fafb;
+              --text-color: #2c3e50;
+              --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          body { 
+              font-family: 'Segoe UI', Arial, sans-serif;
+              line-height: 1.8;
+              margin: 0;
+              padding: 20px;
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+
+          h3 { 
+              color: var(--primary-color);
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              border-bottom: 2px solid var(--secondary-color);
+              padding-bottom: 0.5rem;
+          }
+
+          .question { 
+              background: white;
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+              margin-bottom: 30px;
+              transition: transform 0.2s ease;
+          }
+
+          .question:hover {
+              transform: translateY(-5px);
+          }
+
+          .passage {
+              background: #f8f9fa;
+              padding: 15px;
+              border-left: 4px solid var(--secondary-color);
+              margin-bottom: 15px;
+              border-radius: 0 8px 8px 0;
+          }
+
+          .options { 
+              margin: 20px 0;
+          }
+
+          .options ul {
+              list-style: none;
+              padding: 0;
+          }
+
+          .options li {
+              padding: 12px 20px;
+              margin: 8px 0;
+              background: #fff;
+              border: 1px solid #e1e4e8;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          }
+
+          .options li:hover {
+              background: var(--secondary-color);
+              color: white;
+              border-color: var(--secondary-color);
+          }
+
+          .credits {
+              text-align: center;
+              margin-top: 40px;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+          }
+
+          .rainbow-text {
+              background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              font-weight: bold;
+              font-size: 24px;
+              animation: rainbow 8s linear infinite;
+          }
+
+          @keyframes rainbow {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 200% 50%; }
+          }
+
+          @media (max-width: 768px) {
+              .container {
+                  padding: 10px;
+              }
+
+              .question {
+                  padding: 15px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+  
+      <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">Arithmetic Test 8- Ratio & Proportion  (LOD 2)</h1>
+  
+      <div class="question">
+          <h3>Question 1</h3>
+          
+          <p><strong><p>The employee-manager ratio at a certain company was 25:4, but when the company laid off eighty employees for budgetary reasons, seventeen managers resigned in protest. Which of the following could be the new employee-manager ratio at the company?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 63:12</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 95:17</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 33:5</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 55:6</li></ul></div></div>
+      <div class="question">
+          <h3>Question 2</h3>
+          
+          <p><strong><p>A toy store has only dolls, cars, and blocks in the ratio 3:7:10. The number of cars is more than the number of dolls by a number that is a multiple of both 5 and 8. What is the minimum number of toys in the store?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 400</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 100</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 200</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 300</li></ul></div></div>
+      <div class="question">
+          <h3>Question 3</h3>
+          
+          <p><strong><p>A particular electronics store sells only laptops and tablets. The ratio of laptops to tablets is 3:4, the ratio of touchscreen tablets to non-touchscreen tablets is 7:3, and the ratio of premium laptops to regular laptops is 3:2. If there are 108 premium laptops, what is the ratio of non-touchscreen tablets to regular laptops?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1:1</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 1:2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 1:3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 2:3</li></ul></div></div>
+      <div class="question">
+          <h3>Question 4</h3>
+          
+          <p><strong><p>Anna wants to distribute chocolates among her four children in the ratio&nbsp; 1/3&nbsp;: 1/4: 1/5&nbsp;: 1/6. How many minimum chocolates should she buy, so that she can distribute the chocolates in the given ratio?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 30</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 45</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 57</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 90</li></ul></div></div>
+      <div class="question">
+          <h3>Question 5</h3>
+          
+          <p><strong><p>On Sunday, in a pet shelter, the ratio of the number of cats to the number of dogs was 4:5. On Monday, the shelter received 35 more cats and dogs, then the ratio of cats to dogs became 5:8. Assuming that no animal left the shelter or was adopted and the shelter had cats and dogs only, what is the least number of dogs that were there in the shelter on Sunday?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 55</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 60</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 65</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 70</li></ul></div></div></body></html>

@@ -1,0 +1,170 @@
+
+  <html>
+  <head>
+      <style>
+          :root {
+              --primary-color: #2c3e50;
+              --secondary-color: #3498db;
+              --background-color: #f9fafb;
+              --text-color: #2c3e50;
+              --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          body { 
+              font-family: 'Segoe UI', Arial, sans-serif;
+              line-height: 1.8;
+              margin: 0;
+              padding: 20px;
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+
+          h3 { 
+              color: var(--primary-color);
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              border-bottom: 2px solid var(--secondary-color);
+              padding-bottom: 0.5rem;
+          }
+
+          .question { 
+              background: white;
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+              margin-bottom: 30px;
+              transition: transform 0.2s ease;
+          }
+
+          .question:hover {
+              transform: translateY(-5px);
+          }
+
+          .passage {
+              background: #f8f9fa;
+              padding: 15px;
+              border-left: 4px solid var(--secondary-color);
+              margin-bottom: 15px;
+              border-radius: 0 8px 8px 0;
+          }
+
+          .options { 
+              margin: 20px 0;
+          }
+
+          .options ul {
+              list-style: none;
+              padding: 0;
+          }
+
+          .options li {
+              padding: 12px 20px;
+              margin: 8px 0;
+              background: #fff;
+              border: 1px solid #e1e4e8;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          }
+
+          .options li:hover {
+              background: var(--secondary-color);
+              color: white;
+              border-color: var(--secondary-color);
+          }
+
+          .credits {
+              text-align: center;
+              margin-top: 40px;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+          }
+
+          .rainbow-text {
+              background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              font-weight: bold;
+              font-size: 24px;
+              animation: rainbow 8s linear infinite;
+          }
+
+          @keyframes rainbow {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 200% 50%; }
+          }
+
+          @media (max-width: 768px) {
+              .container {
+                  padding: 10px;
+              }
+
+              .question {
+                  padding: 15px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+  
+      <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">Arithmetic Test 7- Ratio & Proportion (LOD 2)</h1>
+  
+      <div class="question">
+          <h3>Question 1</h3>
+          
+          <p><strong><p>There are only blue, red, and white chips in a bag. There are 4 more blue chips than white chips in the bag. If a number of red chips equal to twice the number of white chips were added, the number of red chips would double, and half the total number of chips would be blue chips. What fraction of the chips in the bag are red?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1/2</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 1/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 1/4</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 1/5</li></ul></div></div>
+      <div class="question">
+          <h3>Question 2</h3>
+          
+          <p><strong><p>Rs. 4199 was intended to be divided among P, Q, R and S in the ratio 2:3:5:7 respectively. By mistake, the money got divided in the reciprocal of the intended ratio. What would be the gain of P (in Rupees) due to this mistake?</p>
+
+<p>FIB</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1291</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li></ul></div></div>
+      <div class="question">
+          <h3>Question 3</h3>
+          
+          <p><strong><p>If Thomas divides half of his comic books in a 1:2 ratio between Alex and Jordan, respectively, then Alex will have one fourth as many comic books as Jordan, who will in turn have twice as many comic books as Thomas. If Alex currently owns 2 comic books, then how many more comic books does Thomas currently own than Jordan?</p>
+
+<p>FIB</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 8</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li></ul></div></div>
+      <div class="question">
+          <h3>Question 4</h3>
+          
+          <p><strong><p>If there are four positive integers a, b, c and d in the ratio 1:2:3:4 and their sum is a perfect square, what cannot be the value of any of the four number?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 10</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 30</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 90</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 100</li></ul></div></div>
+      <div class="question">
+          <h3>Question 5</h3>
+          
+          <p><strong><p>Given a + 1 = b + 2 = c + 3 = d + 4 = a + b + c + d + 5, then what is the value of a + b + c + d?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. -8/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. -10/3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. None of these</li></ul></div></div></body></html>

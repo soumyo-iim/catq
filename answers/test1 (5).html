@@ -1,0 +1,170 @@
+
+  <html>
+  <head>
+      <style>
+          :root {
+              --primary-color: #2c3e50;
+              --secondary-color: #3498db;
+              --background-color: #f9fafb;
+              --text-color: #2c3e50;
+              --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          body { 
+              font-family: 'Segoe UI', Arial, sans-serif;
+              line-height: 1.8;
+              margin: 0;
+              padding: 20px;
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+
+          h3 { 
+              color: var(--primary-color);
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+              border-bottom: 2px solid var(--secondary-color);
+              padding-bottom: 0.5rem;
+          }
+
+          .question { 
+              background: white;
+              padding: 25px;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+              margin-bottom: 30px;
+              transition: transform 0.2s ease;
+          }
+
+          .question:hover {
+              transform: translateY(-5px);
+          }
+
+          .passage {
+              background: #f8f9fa;
+              padding: 15px;
+              border-left: 4px solid var(--secondary-color);
+              margin-bottom: 15px;
+              border-radius: 0 8px 8px 0;
+          }
+
+          .options { 
+              margin: 20px 0;
+          }
+
+          .options ul {
+              list-style: none;
+              padding: 0;
+          }
+
+          .options li {
+              padding: 12px 20px;
+              margin: 8px 0;
+              background: #fff;
+              border: 1px solid #e1e4e8;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          }
+
+          .options li:hover {
+              background: var(--secondary-color);
+              color: white;
+              border-color: var(--secondary-color);
+          }
+
+          .credits {
+              text-align: center;
+              margin-top: 40px;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: var(--shadow);
+          }
+
+          .rainbow-text {
+              background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              font-weight: bold;
+              font-size: 24px;
+              animation: rainbow 8s linear infinite;
+          }
+
+          @keyframes rainbow {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 200% 50%; }
+          }
+
+          @media (max-width: 768px) {
+              .container {
+                  padding: 10px;
+              }
+
+              .question {
+                  padding: 15px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+  
+      <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">Arithmetic Test 5- Ratio & Proportion (LOD 1)</h1>
+  
+      <div class="question">
+          <h3>Question 1</h3>
+          
+          <p><strong><p>If&nbsp;abcd &ne; 0,&nbsp;a:b:c=2:3:4,&nbsp;c:d=5:6&nbsp; and&nbsp;a+b+c&ndash;d=42, what is the value of&nbsp;d?</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 12</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 24</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 36</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 48</li></ul></div></div>
+      <div class="question">
+          <h3>Question 2</h3>
+          
+          <p><strong><p>A basket of 2 apples, 4 oranges and 6 mangoes costs the same as a basket of 1 apple, 4 oranges and 8 mangoes, or a basket of 8 oranges and 7 mangoes. Then the number of mangoes in a basket of mangoes that has the same cost as the other baskets is</p>
+
+<p>FIB</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 13</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li></ul></div></div>
+      <div class="question">
+          <h3>Question 3</h3>
+          
+          <p><strong><p>A , B , C are 3 natural numbers such that A:B = 5:7 and (A+C)/(B+C)=32/39 . Find ratio of B/(B+C)&nbsp;</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 1:3</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 33:59</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 49:78</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 49:73</li></ul></div></div>
+      <div class="question">
+          <h3>Question 4</h3>
+          
+          <p><strong><p>The students in three batches in school is in the ratio of 2:3:5. If 20 students in each batch are increased than the ratio changes to 4:5:7. The total number of students in the three batches before the increase was,</p>
+
+<p>FIB</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 100</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. </li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. </li></ul></div></div>
+      <div class="question">
+          <h3>Question 5</h3>
+          
+          <p><strong><p>Expenditure of a mess is partly fixed and partly variable. If There are 5 students then Total expenditure is Rs. 1050. If there are 8 student then The Total expenditure is Rs. 1200. Find the average expenditure when there are 15 students in the mess.</p>
+</strong></p>
+          <div class="options">
+              <h4>Options:</h4>
+              <ul>
+      <li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">1. 103.33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">2. 105.33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">3. 107.33</li><li onclick="this.style.background='var(--secondary-color)'; this.style.color='white';">4. 109.33</li></ul></div></div></body></html>
