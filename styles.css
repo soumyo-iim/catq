@@ -1441,3 +1441,89 @@ header.top-header {
 .folder-node.collapsed > .folder-children {
     display: none;
 }
+
+/* --- Detailed History View Styles --- */
+.history-detailed-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.history-card {
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.history-card:hover {
+    background: var(--panel-hover-bg);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.history-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+}
+
+.history-card.pass::before { background: var(--success); }
+.history-card.fail::before { background: var(--danger); }
+
+.history-card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.history-card-score {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.history-card-meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.history-card-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-delete-history {
+    background: rgba(244, 63, 94, 0.05);
+    border: 1px solid rgba(244, 63, 94, 0.15);
+    color: var(--danger);
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.btn-delete-history:hover {
+    background: rgba(244, 63, 94, 0.15);
+    border-color: var(--danger);
+}

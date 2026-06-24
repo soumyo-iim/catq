@@ -55,6 +55,10 @@
                     <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
                     Active Quiz
                 </div>
+                <div class="nav-item" id="nav-history" onclick="switchView('history')">
+                    <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6c-1.66 0-3.17-.68-4.28-1.78l-1.42 1.42C8.9 18.25 10.37 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                    History
+                </div>
                 <div class="nav-item" id="nav-parser" onclick="switchView('parser')">
                     <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
                     Parser Settings
@@ -318,6 +322,65 @@
                 <!-- Question review list -->
                 <div class="review-container" id="review-list">
                     <!-- Dynamic review items inserted here -->
+                </div>
+            </div>
+
+            <!-- History / Performance View -->
+            <div class="view-panel" id="view-history">
+                <!-- Stats Row -->
+                <div class="dashboard-grid" style="margin-bottom: 24px;">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>QUIZZES COMPLETED</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="history-stat-total">0</div>
+                    </div>
+                    <div class="stat-card emerald">
+                        <div class="stat-header">
+                            <span>AVERAGE ACCURACY</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="history-stat-accuracy">0%</div>
+                    </div>
+                    <div class="stat-card warning">
+                        <div class="stat-header">
+                            <span>TOTAL TIME PRACTICED</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="history-stat-time">0s</div>
+                    </div>
+                    <div class="stat-card pink">
+                        <div class="stat-header">
+                            <span>STUDY vs EXAM</span>
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.58 10.57 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-value" id="history-stat-ratio" style="font-size: 16px; font-weight: 700; height: 38px; display: flex; align-items: center;">0 / 0</div>
+                    </div>
+                </div>
+
+                <div class="action-card" style="margin-bottom: 24px; padding: 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 16px;">
+                    <div>
+                        <div class="card-title" style="font-size: 16px; margin: 0;">Manage Quiz History Data</div>
+                        <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Permanently clear your performance records or inspect them below.</div>
+                    </div>
+                    <button class="btn-danger" onclick="clearAllHistory()" style="padding: 10px 16px; font-size: 12px;">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right: 4px;"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                        Clear All History
+                    </button>
+                </div>
+
+                <h2 style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 600; margin-bottom: 20px;">Detailed Practice Log</h2>
+                <div class="history-detailed-list" id="history-detailed-list">
+                    <!-- Detailed history items will be rendered here -->
                 </div>
             </div>
 

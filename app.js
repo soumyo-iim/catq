@@ -656,6 +656,10 @@ function switchView(viewName) {
     } else if (viewName === 'results') {
         titleEl.innerText = 'Performance Review';
         subtitleEl.innerText = 'Analyze correct/incorrect responses and build knowledge.';
+    } else if (viewName === 'history') {
+        titleEl.innerText = 'Practice History';
+        subtitleEl.innerText = 'Review your past performance, accuracy metrics, and details.';
+        renderDetailedHistory();
     } else if (viewName === 'parser') {
         titleEl.innerText = 'Selector Console';
         subtitleEl.innerText = 'Inspect HTML and tune compiler rules for complex web exports.';
@@ -907,7 +911,7 @@ function renderQuizQuestion() {
             // Check if correct
             const userText = quiz.answers[quiz.currentIdx] || '';
             const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
-            const isCorrect = userText.trim().toLowerCase() === correctVal.trim().toLowerCase();
+            const isCorrect = normalizeFIBAnswer(userText) === normalizeFIBAnswer(correctVal);
 
             if (isCorrect) {
                 input.style.borderColor = 'var(--success)';
@@ -1175,7 +1179,7 @@ function submitQuiz() {
 
         if (q.isFIB) {
             const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
-            if (userAns.toString().trim().toLowerCase() === correctVal.trim().toLowerCase()) {
+            if (normalizeFIBAnswer(userAns) === normalizeFIBAnswer(correctVal)) {
                 correctCount++;
             } else {
                 incorrectCount++;
@@ -1260,7 +1264,7 @@ function renderResults(quiz, correct, incorrect, timeSpent, percentage) {
         if (userAns !== undefined && userAns !== null && userAns.toString().trim() !== '') {
             if (q.isFIB) {
                 const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
-                isCorrect = userAns.toString().trim().toLowerCase() === correctVal.trim().toLowerCase();
+                isCorrect = normalizeFIBAnswer(userAns) === normalizeFIBAnswer(correctVal);
             } else {
                 isCorrect = userAns === q.correctAnswerIndex;
             }
@@ -1384,6 +1388,143 @@ function updateDashboardStats() {
     }
     
     renderHistory();
+}
+
+function normalizeFIBAnswer(text) {
+    if (text === undefined || text === null) return '';
+    return text.toString()
+        .toLowerCase()
+        .replace(/&nbsp;/gi, ' ')
+        .replace(/Â/g, '')
+        .replace(/[\s\u00a0\u200b\u00c2]+/g, ' ')
+        .trim();
+}
+
+function renderDetailedHistory() {
+    const listEl = document.getElementById('history-detailed-list');
+    const totalEl = document.getElementById('history-stat-total');
+    const accuracyEl = document.getElementById('history-stat-accuracy');
+    const timeEl = document.getElementById('history-stat-time');
+    const ratioEl = document.getElementById('history-stat-ratio');
+
+    const history = state.history;
+
+    // Calculate stats
+    const total = history.length;
+    totalEl.innerText = total;
+
+    if (total > 0) {
+        let sumAccuracy = 0;
+        let totalTime = 0;
+        let studyCount = 0;
+        let examCount = 0;
+
+        history.forEach(item => {
+            sumAccuracy += item.percentage;
+            totalTime += (item.timeSpent || 0);
+            if (item.mode && item.mode.toLowerCase() === 'study') {
+                studyCount++;
+            } else {
+                examCount++;
+            }
+        });
+
+        const avgAccuracy = Math.round(sumAccuracy / total);
+        accuracyEl.innerText = `${avgAccuracy}%`;
+
+        // Style the accuracy stat card
+        const accuracyCard = accuracyEl.parentElement;
+        accuracyCard.className = 'stat-card';
+        if (avgAccuracy >= 75) {
+            accuracyCard.classList.add('emerald');
+        } else if (avgAccuracy >= 50) {
+            accuracyCard.classList.add('warning');
+        } else {
+            accuracyCard.classList.add('rose');
+        }
+
+        // Format total time practiced
+        timeEl.innerText = formatTotalTime(totalTime);
+        ratioEl.innerText = `${studyCount} S / ${examCount} E`;
+        ratioEl.title = `Study Mode sessions: ${studyCount}, Exam Mode sessions: ${examCount}`;
+    } else {
+        accuracyEl.innerText = '0%';
+        timeEl.innerText = '0s';
+        ratioEl.innerText = '0 S / 0 E';
+        accuracyEl.parentElement.className = 'stat-card emerald';
+    }
+
+    // Render detailed cards list
+    if (total === 0) {
+        listEl.innerHTML = `
+            <div class="no-files-card" style="margin: 0; border-style: solid;">
+                You haven't completed any quizzes yet. Start practicing and your scores will appear here!
+            </div>
+        `;
+        return;
+    }
+
+    listEl.innerHTML = '';
+    history.forEach(item => {
+        const isPass = item.percentage >= 70;
+        const card = document.createElement('div');
+        card.className = `history-card ${isPass ? 'pass' : 'fail'}`;
+
+        card.innerHTML = `
+            <div class="history-card-left">
+                <div class="history-card-score">${item.score} / ${item.total} Correct (${item.percentage}%)</div>
+                <div class="history-card-meta">
+                    <span>${item.date}</span>
+                    <span>•</span>
+                    <span>${item.mode} Mode</span>
+                    <span>•</span>
+                    <span>Time Taken: ${formatTimeSpent(item.timeSpent || 0)}</span>
+                </div>
+            </div>
+            <div class="history-card-right">
+                <span class="history-badge ${isPass ? 'pass' : 'fail'}">${isPass ? 'PASS' : 'FAIL'}</span>
+                <button class="btn-delete-history" onclick="deleteHistoryItem('${item.id}')" title="Delete record">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                    Delete
+                </button>
+            </div>
+        `;
+        listEl.appendChild(card);
+    });
+}
+
+function formatTotalTime(seconds) {
+    if (seconds < 60) return `${seconds}s`;
+    const m = Math.floor(seconds / 60);
+    if (m < 60) {
+        const s = seconds % 60;
+        return `${m}m ${s}s`;
+    }
+    const h = Math.floor(m / 60);
+    const mRem = m % 60;
+    return `${h}h ${mRem}m`;
+}
+
+function deleteHistoryItem(id) {
+    if (confirm('Are you sure you want to delete this practice record?')) {
+        state.history = state.history.filter(item => item.id !== id);
+        localStorage.setItem('quizpro_history', JSON.stringify(state.history));
+        
+        // Refresh views
+        renderDetailedHistory();
+        updateDashboardStats();
+    }
+}
+
+function clearAllHistory() {
+    if (confirm('WARNING: This will permanently delete ALL your quiz history. Are you sure you want to proceed?')) {
+        state.history = [];
+        localStorage.setItem('quizpro_history', JSON.stringify([]));
+        
+        // Refresh views
+        renderDetailedHistory();
+        updateDashboardStats();
+    }
 }
 
 // --- Utilities ---

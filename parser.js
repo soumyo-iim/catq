@@ -390,15 +390,24 @@ class QuizParser {
     }
 
     static cleanQuestionText(html) {
+        if (!html) return '';
+        let clean = html
+            .replace(/&nbsp;/gi, ' ')
+            .replace(/Â/g, '')
+            .replace(/[\s\u00a0\u200b\u00c2]+/g, ' ');
         // Strip question prefixes like "Question 1:", "Q1. ", etc.
-        let clean = html.replace(/^\s*(?:Question|Q\.?|)\s*\d+\s*[\s.:\)-]\s*/i, '').trim();
-        // Remove trailing elements if they are just decorations
+        clean = clean.replace(/^\s*(?:Question|Q\.?|)\s*\d+\s*[\s.:\)-]\s*/i, '').trim();
         return clean;
     }
 
     static cleanOptionText(text) {
+        if (!text) return '';
+        let clean = text
+            .replace(/&nbsp;/gi, ' ')
+            .replace(/Â/g, '')
+            .replace(/[\s\u00a0\u200b\u00c2]+/g, ' ');
         // Strip prefixes like "A) ", "B. ", "1. ", "a) "
-        let clean = text.replace(/^\s*[A-D\d]\s*[\.:\)-]\s*/i, '');
+        clean = clean.replace(/^\s*[A-D\d]\s*[\.:\)-]\s*/i, '');
         // Strip indicators like " (Correct)" or " [Ans]"
         clean = clean.replace(/\s*[\(\[]\s*(?:correct|ans|right|correct\s+answer)\s*[\)\]]\s*$/i, '');
         return clean.trim();
@@ -584,7 +593,7 @@ class QuizParser {
     static resolveCorrectAnswer(ansVal, options) {
         if (!ansVal) return -1;
 
-        const valLower = ansVal.toLowerCase();
+        const valLower = ansVal.toLowerCase().trim();
 
         // 1. Check if it matches option letters (A, B, C, D)
         if (valLower === 'a' || valLower === 'option a') return 0;
@@ -593,10 +602,22 @@ class QuizParser {
         if (valLower === 'd' || valLower === 'option d') return 3;
         if (valLower === 'e' || valLower === 'option e') return 4;
 
+        const normalize = (text) => {
+            if (!text) return '';
+            return text
+                .toLowerCase()
+                .replace(/&nbsp;/gi, ' ')
+                .replace(/Â/g, '')
+                .replace(/[\s\u00a0\u200b\u00c2]+/g, ' ')
+                .trim();
+        };
+
+        const normalizedAns = normalize(ansVal);
+
         // 2. Check if the value is a direct match with one of the option texts
         for (let i = 0; i < options.length; i++) {
-            const cleanOpt = options[i].toLowerCase().trim();
-            if (cleanOpt === valLower) {
+            const normalizedOpt = normalize(options[i]);
+            if (normalizedOpt === normalizedAns) {
                 return i;
             }
         }
@@ -605,6 +626,19 @@ class QuizParser {
         const num = parseInt(ansVal);
         if (!isNaN(num) && num >= 1 && num <= options.length) {
             return num - 1;
+        }
+
+        // 4. Try a loose alphanumeric check (for non-pure-numeric values)
+        const cleanAlphaNum = (text) => {
+            return normalize(text).replace(/[^a-z0-9]/g, '');
+        };
+        const cleanAns = cleanAlphaNum(ansVal);
+        if (cleanAns.length > 0 && isNaN(Number(cleanAns))) {
+            for (let i = 0; i < options.length; i++) {
+                if (cleanAlphaNum(options[i]) === cleanAns) {
+                    return i;
+                }
+            }
         }
 
         return -1;
