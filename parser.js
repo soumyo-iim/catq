@@ -628,12 +628,12 @@ class QuizParser {
             return num - 1;
         }
 
-        // 4. Try a loose alphanumeric check (for non-pure-numeric values)
+        // 4. Try a loose alphanumeric check
         const cleanAlphaNum = (text) => {
             return normalize(text).replace(/[^a-z0-9]/g, '');
         };
         const cleanAns = cleanAlphaNum(ansVal);
-        if (cleanAns.length > 0 && isNaN(Number(cleanAns))) {
+        if (cleanAns.length > 0) {
             for (let i = 0; i < options.length; i++) {
                 if (cleanAlphaNum(options[i]) === cleanAns) {
                     return i;

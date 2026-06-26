@@ -34,6 +34,8 @@ class ActiveQuiz {
         this.startTime = Date.now();
         this.timerId = null;
         this.sourceFiles = sourceFiles;
+        this.timeSpent = {}; // { qIdx: seconds }
+        this.lastQuestionSwitchTime = Date.now();
     }
 }
 
@@ -1037,6 +1039,7 @@ function prevQuestion() {
     const quiz = state.activeQuiz;
     if (!quiz || quiz.currentIdx === 0) return;
     
+    updateTimeSpent();
     quiz.currentIdx--;
     renderQuizQuestion();
     renderQuizGrid();
@@ -1046,6 +1049,7 @@ function nextQuestion() {
     const quiz = state.activeQuiz;
     if (!quiz || quiz.currentIdx === quiz.questions.length - 1) return;
 
+    updateTimeSpent();
     quiz.currentIdx++;
     renderQuizQuestion();
     renderQuizGrid();
@@ -1058,6 +1062,18 @@ function toggleFlagQuestion() {
     quiz.flagged[quiz.currentIdx] = !quiz.flagged[quiz.currentIdx];
     renderQuizQuestion();
     renderQuizGrid();
+}
+
+function updateTimeSpent() {
+    const quiz = state.activeQuiz;
+    if (!quiz) return;
+    const now = Date.now();
+    const elapsed = Math.round((now - quiz.lastQuestionSwitchTime) / 1000);
+    if (!quiz.timeSpent[quiz.currentIdx]) {
+        quiz.timeSpent[quiz.currentIdx] = 0;
+    }
+    quiz.timeSpent[quiz.currentIdx] += elapsed;
+    quiz.lastQuestionSwitchTime = now;
 }
 
 function renderQuizGrid() {
@@ -1081,6 +1097,7 @@ function renderQuizGrid() {
         }
 
         dot.addEventListener('click', () => {
+            updateTimeSpent();
             quiz.currentIdx = idx;
             renderQuizQuestion();
             renderQuizGrid();
@@ -1174,6 +1191,8 @@ function submitQuiz() {
 
     // Terminate timer
     if (quiz.timerId) clearInterval(quiz.timerId);
+
+    updateTimeSpent();
 
     // Calculate score
     let correctCount = 0;
@@ -1317,9 +1336,18 @@ function renderResults(quiz, correct, incorrect, timeSpent, percentage) {
             });
         }
 
+        const qTime = quiz.timeSpent[idx] || 0;
+        const qTimeStr = formatTimeSpent(qTime);
+
         card.innerHTML = `
             <div class="review-q-header">
-                <div class="review-q-text">Question ${idx + 1}: ${q.questionText}</div>
+                <div class="review-q-text">
+                    Question ${idx + 1}: ${q.questionText}
+                    <div style="font-size: 12px; color: #94a3b8; font-weight: normal; margin-top: 6px;">
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="vertical-align: text-top; margin-right: 2px;"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        Time spent: ${qTimeStr}
+                    </div>
+                </div>
                 <span class="review-badge ${badgeClass}">${badgeText}</span>
             </div>
             <div class="review-options-list">

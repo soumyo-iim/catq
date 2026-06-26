@@ -141,11 +141,7 @@
                             <div class="form-group">
                                 <label>Practice Format</label>
                                 <div class="options-grid">
-                                    <div class="mode-selector selected" id="mode-study" onclick="selectPracticeMode('study')">
-                                        <div class="mode-title">Study Mode</div>
-                                        <div class="mode-desc">Receive immediate feedback and explanations. Untimed.</div>
-                                    </div>
-                                    <div class="mode-selector" id="mode-exam" onclick="selectPracticeMode('exam')">
+                                    <div class="mode-selector selected" id="mode-exam" onclick="selectPracticeMode('exam')">
                                         <div class="mode-title">Exam Mode</div>
                                         <div class="mode-desc">Standard timed test. Results shown only at the end.</div>
                                     </div>
@@ -171,14 +167,24 @@
                             </div>
 
                             <!-- Timer Setup -->
-                            <div class="form-group" id="timer-group" style="display: none;">
+                            <div class="form-group" id="timer-group">
                                 <label>Time Limit (minutes)</label>
                                 <select id="quiz-duration-select" class="custom-select">
+                                    <option value="1">1 Minute</option>
+                                    <option value="2">2 Minutes</option>
+                                    <option value="3">3 Minutes</option>
+                                    <option value="4">4 Minutes</option>
                                     <option value="5">5 Minutes</option>
+                                    <option value="6">6 Minutes</option>
+                                    <option value="7">7 Minutes</option>
+                                    <option value="8">8 Minutes</option>
+                                    <option value="9">9 Minutes</option>
                                     <option value="10">10 Minutes</option>
-                                    <option value="20" selected>20 Minutes</option>
-                                    <option value="30">30 Minutes</option>
-                                    <option value="60">60 Minutes</option>
+                                    <option value="11">11 Minutes</option>
+                                    <option value="12">12 Minutes</option>
+                                    <option value="13">13 Minutes</option>
+                                    <option value="14">14 Minutes</option>
+                                    <option value="15" selected>15 Minutes</option>
                                 </select>
                             </div>
 
