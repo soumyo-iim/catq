@@ -766,7 +766,7 @@ function updateParserDebugView() {
 
 // --- Active Quiz Controller ---
 
-let selectedMode = 'study';
+let selectedMode = 'exam';
 
 function selectPracticeMode(mode) {
     selectedMode = mode;
@@ -933,15 +933,8 @@ function renderQuizQuestion() {
     input.type = 'text';
     input.className = 'custom-input';
     input.placeholder = 'Type your answer here...';
-    input.style.fontSize = '16px';
-    input.style.padding = '16px 20px';
     input.style.width = '100%';
-    input.style.borderRadius = 'var(--radius-md)';
-    input.style.border = '1px solid var(--border-color)';
-    input.style.background = 'rgba(0, 0, 0, 0.2)';
-    input.style.color = '#fff';
-    input.style.outline = 'none';
-    input.style.transition = 'all 0.3s';
+    input.style.marginTop = '8px';
 
     // Set previous answer if already typed (and it's a string, not an option index)
     if (quiz.answers[quiz.currentIdx] !== undefined && typeof quiz.answers[quiz.currentIdx] === 'string') {
