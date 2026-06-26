@@ -1199,7 +1199,10 @@ function submitQuiz() {
         percentage: percentage,
         mode: quiz.mode === 'study' ? 'Study' : 'Exam',
         timeSpent: timeSpent,
-        sourceFiles: quiz.sourceFiles || []
+        sourceFiles: quiz.sourceFiles || [],
+        questions: quiz.questions,
+        answers: quiz.answers,
+        timeSpentArray: quiz.timeSpent
     };
 
     state.history.unshift(record);
@@ -1301,7 +1304,7 @@ function renderResults(quiz, correct, incorrect, timeSpent, percentage) {
             `;
         }
 
-        const qTime = quiz.timeSpent[idx] || 0;
+        const qTime = quiz.timeSpentArray ? (quiz.timeSpentArray[idx] || 0) : (quiz.timeSpent[idx] || 0);
         const qTimeStr = formatTimeSpent(qTime);
 
         card.innerHTML = `
@@ -1354,6 +1357,8 @@ function renderHistory() {
         const isPass = item.percentage >= 70;
         const itemDiv = document.createElement('div');
         itemDiv.className = 'history-item';
+        itemDiv.style.cursor = 'pointer';
+        itemDiv.onclick = () => viewHistoryRecord(item.id);
         
         let displaySources = 'General Practice';
         if (item.sourceFiles && item.sourceFiles.length > 0) {
@@ -1481,6 +1486,11 @@ function renderDetailedHistory() {
         const isPass = item.percentage >= 70;
         const card = document.createElement('div');
         card.className = `history-card ${isPass ? 'pass' : 'fail'}`;
+        card.style.cursor = 'pointer';
+        card.onclick = (e) => {
+            if (e.target.closest('.btn-delete-history')) return;
+            viewHistoryRecord(item.id);
+        };
 
         let displaySources = 'General Practice';
         if (item.sourceFiles && item.sourceFiles.length > 0) {
@@ -1538,6 +1548,26 @@ function deleteHistoryItem(id) {
         updateDashboardStats();
     }
 }
+
+window.viewHistoryRecord = function(id) {
+    const record = state.history.find(r => r.id === id);
+    if (!record || !record.questions) {
+        alert("Detailed review data is not available for this old record.");
+        return;
+    }
+    
+    const mockQuiz = {
+        questions: record.questions,
+        answers: record.answers || [],
+        timeSpentArray: record.timeSpentArray || [],
+        timeSpent: record.timeSpentArray || [], 
+        mode: (record.mode || 'exam').toLowerCase(),
+        sourceFiles: record.sourceFiles
+    };
+    
+    renderResults(mockQuiz, record.score, record.total - record.score, record.timeSpent, record.percentage);
+    switchView('results');
+};
 
 function clearAllHistory() {
     if (confirm('WARNING: This will permanently delete ALL your quiz history. Are you sure you want to proceed?')) {
