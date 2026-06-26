@@ -793,7 +793,7 @@ function startQuizHandler() {
 
     // Settings
     const sliderValue = parseInt(document.getElementById('q-count-slider').value);
-    const timeLimitMinutes = parseInt(document.getElementById('quiz-duration-select').value);
+    const timeLimitMinutes = parseInt(document.getElementById('quiz-duration-input').value) || 20;
 
     // Shuffle and pick
     const shouldShuffle = document.getElementById('shuffle-questions-checkbox').checked;
@@ -889,72 +889,7 @@ function renderQuizQuestion() {
     const isAnswered = quiz.answers[quiz.currentIdx] !== undefined && quiz.answers[quiz.currentIdx].toString().trim() !== '';
     const isChecked = quiz.checked[quiz.currentIdx] === true;
 
-    if (q.isFIB) {
-        // Render Fill-in-the-blank input field
-        const fibContainer = document.createElement('div');
-        fibContainer.style.display = 'flex';
-        fibContainer.style.flexDirection = 'column';
-        fibContainer.style.gap = '12px';
-
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.className = 'custom-input';
-        input.placeholder = 'Type your answer here...';
-        input.style.fontSize = '16px';
-        input.style.padding = '16px 20px';
-        input.style.width = '100%';
-        input.style.borderRadius = 'var(--radius-md)';
-        input.style.border = '1px solid var(--border-color)';
-        input.style.background = 'rgba(0, 0, 0, 0.2)';
-        input.style.color = '#fff';
-        input.style.outline = 'none';
-        input.style.transition = 'all 0.3s';
-
-        // Set previous answer if already typed
-        if (quiz.answers[quiz.currentIdx] !== undefined) {
-            input.value = quiz.answers[quiz.currentIdx];
-        }
-
-        // Disable input if checked in study mode
-        if (quiz.mode === 'study' && isChecked) {
-            input.disabled = true;
-            
-            // Check if correct
-            const userText = quiz.answers[quiz.currentIdx] || '';
-            const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
-            const isCorrect = normalizeFIBAnswer(userText) === normalizeFIBAnswer(correctVal);
-
-            if (isCorrect) {
-                input.style.borderColor = 'var(--success)';
-                input.style.boxShadow = '0 0 10px var(--success-glow)';
-                input.style.background = 'rgba(16, 185, 129, 0.05)';
-            } else {
-                input.style.borderColor = 'var(--danger)';
-                input.style.boxShadow = '0 0 10px var(--danger-glow)';
-                input.style.background = 'rgba(244, 63, 94, 0.05)';
-
-                // Show correct answer indicator below it
-                const helperText = document.createElement('div');
-                helperText.style.color = '#f87171';
-                helperText.style.fontSize = '14px';
-                helperText.style.fontWeight = '600';
-                helperText.style.marginTop = '4px';
-                helperText.innerHTML = `Correct Answer: <span style="color:#10b981">${correctVal}</span>`;
-                fibContainer.appendChild(helperText);
-            }
-        }
-
-        // Handle value changes
-        input.addEventListener('input', (e) => {
-            quiz.answers[quiz.currentIdx] = e.target.value;
-            updateQuizGridDotStatus(quiz.currentIdx);
-            updateQuizNavButtons();
-        });
-
-        fibContainer.appendChild(input);
-        optList.appendChild(fibContainer);
-
-    } else {
+    if (!q.isFIB && q.options && q.options.length > 0) {
         // Standard MCQ Options
         q.options.forEach((optText, optIdx) => {
             const item = document.createElement('div');
@@ -971,24 +906,61 @@ function renderQuizQuestion() {
                 item.classList.add('selected');
             }
 
-            // Apply feedback styles in study mode if checked
-            if (quiz.mode === 'study' && isChecked) {
-                if (optIdx === q.correctAnswerIndex) {
-                    item.classList.add('correct');
-                } else if (quiz.answers[quiz.currentIdx] === optIdx) {
-                    item.classList.add('incorrect');
-                }
-            }
-
             // Option click handler
             item.addEventListener('click', () => {
-                if (quiz.mode === 'study' && isChecked) return; // Can't change after check in study mode
                 selectQuizOption(optIdx);
             });
 
             optList.appendChild(item);
         });
     }
+
+    // Always render Fill-in-the-blank (TITA) input field for all questions
+    const fibContainer = document.createElement('div');
+    fibContainer.style.display = 'flex';
+    fibContainer.style.flexDirection = 'column';
+    fibContainer.style.gap = '12px';
+    fibContainer.style.marginTop = (!q.isFIB && q.options.length > 0) ? '20px' : '0';
+
+    const titaLabel = document.createElement('div');
+    titaLabel.innerText = 'Type In The Answer (TITA)';
+    titaLabel.style.fontSize = '14px';
+    titaLabel.style.color = '#94a3b8';
+    titaLabel.style.fontWeight = '500';
+    fibContainer.appendChild(titaLabel);
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'custom-input';
+    input.placeholder = 'Type your answer here...';
+    input.style.fontSize = '16px';
+    input.style.padding = '16px 20px';
+    input.style.width = '100%';
+    input.style.borderRadius = 'var(--radius-md)';
+    input.style.border = '1px solid var(--border-color)';
+    input.style.background = 'rgba(0, 0, 0, 0.2)';
+    input.style.color = '#fff';
+    input.style.outline = 'none';
+    input.style.transition = 'all 0.3s';
+
+    // Set previous answer if already typed (and it's a string, not an option index)
+    if (quiz.answers[quiz.currentIdx] !== undefined && typeof quiz.answers[quiz.currentIdx] === 'string') {
+        input.value = quiz.answers[quiz.currentIdx];
+    }
+
+    // Handle value changes
+    input.addEventListener('input', (e) => {
+        quiz.answers[quiz.currentIdx] = e.target.value;
+        updateQuizGridDotStatus(quiz.currentIdx);
+        updateQuizNavButtons();
+        
+        // Remove selection from MCQ options if user types in TITA
+        const options = optList.querySelectorAll('.option-card-item');
+        options.forEach(opt => opt.classList.remove('selected'));
+    });
+
+    fibContainer.appendChild(input);
+    optList.appendChild(fibContainer);
 
     // Check explanation card (study mode only)
     const expCard = document.getElementById('explanation-card');
@@ -1205,7 +1177,7 @@ function submitQuiz() {
             return;
         }
 
-        if (q.isFIB) {
+        if (typeof userAns === 'string') {
             const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
             if (normalizeFIBAnswer(userAns) === normalizeFIBAnswer(correctVal)) {
                 correctCount++;
@@ -1291,7 +1263,7 @@ function renderResults(quiz, correct, incorrect, timeSpent, percentage) {
         let isCorrect = false;
         
         if (userAns !== undefined && userAns !== null && userAns.toString().trim() !== '') {
-            if (q.isFIB) {
+            if (typeof userAns === 'string') {
                 const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
                 isCorrect = normalizeFIBAnswer(userAns) === normalizeFIBAnswer(correctVal);
             } else {
@@ -1306,24 +1278,13 @@ function renderResults(quiz, correct, incorrect, timeSpent, percentage) {
         const badgeClass = isCorrect ? 'correct' : 'incorrect';
 
         let optionsHtml = '';
-        if (q.isFIB) {
-            const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
-            const userTyped = userAns || '[No answer entered]';
-            optionsHtml = `
-                <div class="review-opt ${isCorrect ? 'selected-correct' : 'selected-incorrect'}" style="margin-bottom:8px;">
-                    <strong>Your Response:</strong> ${userTyped}
-                </div>
-                <div class="review-opt actual-correct">
-                    <strong>Correct Answer:</strong> ${correctVal}
-                </div>
-            `;
-        } else {
+        if (q.options && q.options.length > 1 && !q.isFIB) {
             q.options.forEach((opt, optIdx) => {
                 let optClass = 'review-opt';
                 if (optIdx === q.correctAnswerIndex) {
                     optClass += ' actual-correct';
                 }
-                if (userAns === optIdx) {
+                if (typeof userAns === 'number' && userAns === optIdx) {
                     optClass += isCorrect ? ' selected-correct' : ' selected-incorrect';
                 }
 
@@ -1334,6 +1295,17 @@ function renderResults(quiz, correct, incorrect, timeSpent, percentage) {
                     </div>
                 `;
             });
+        }
+
+        if (typeof userAns === 'string' || q.isFIB) {
+            const correctVal = q.options[q.correctAnswerIndex] || q.options[0] || '';
+            const userTyped = (typeof userAns === 'string' && userAns) ? userAns : (userAns || '[No answer entered]');
+            optionsHtml += `
+                <div class="review-opt ${isCorrect ? 'selected-correct' : 'selected-incorrect'}" style="margin-top:10px; margin-bottom:8px;">
+                    <strong>Your Response (Typed):</strong> ${userTyped}
+                </div>
+                ${q.isFIB ? `<div class="review-opt actual-correct"><strong>Correct Answer:</strong> ${correctVal}</div>` : ''}
+            `;
         }
 
         const qTime = quiz.timeSpent[idx] || 0;
