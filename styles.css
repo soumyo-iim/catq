@@ -3,7 +3,7 @@
  * Obsidan glassmorphic theme with modern typography, harmonic accents, and fluid animations.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap');
 
 :root {
     /* Color Palette (Retro Arcade Dark) */
@@ -71,8 +71,8 @@
 }
 
 body {
-    font-family: 'VT323', monospace;
-    font-size: 20px; /* VT323 needs a slightly larger base size */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     background-color: var(--bg-main);
     color: var(--text-primary);
     min-height: 100vh;
@@ -670,8 +670,8 @@ header.top-header {
     color: var(--text-primary);
     padding: 12px;
     border-radius: 0;
-    font-family: 'VT323', monospace;
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     outline: none;
     transition: border-color 0.1s;
     box-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.5);
@@ -824,10 +824,10 @@ header.top-header {
 }
 
 .question-text-display {
-    font-family: 'VT323', monospace;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.4;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
     color: var(--text-primary);
 }
 
